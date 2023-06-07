@@ -26,7 +26,7 @@ Cuando haya culminado este procedimiento, deberá consultar el ticket del resume
 }
 ´´´
 
-2. JSON RESPUESTA
+2. **JSON RESPUESTA**
 
 ´´´
 {
