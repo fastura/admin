@@ -1,4 +1,4 @@
-# Área de Logs: Qué es y su importancia
+# Logs
 
 El área de logs es de suma importancia ya que agrupa los errores generados en el sistema de facturación con este historial podremos detectar con mayor rapidez la solución para apoyar a nuestros clientes.
 Podrás ubicarlo siguiendo estos pasos:

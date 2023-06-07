@@ -13,7 +13,7 @@ Cuando haya culminado este procedimiento, deberá consultar el ticket del resume
 
 1. JSON A ENVIAR
 
-´´´
+```
 {
   "fecha_de_emision_de_documentos": "2019-01-20",
   "codigo_tipo_proceso": "3",
@@ -24,11 +24,11 @@ Cuando haya culminado este procedimiento, deberá consultar el ticket del resume
     }
   ]
 }
-´´´
+```
 
 2. **JSON RESPUESTA**
 
-´´´
+```
 {
     "success": true,
     "data": {
@@ -36,7 +36,7 @@ Cuando haya culminado este procedimiento, deberá consultar el ticket del resume
         "ticket": "1548517805048"
     }
 }
-´´´
+```
 
 ## CONSULTAR TICKET ANULACIÓN
 
@@ -53,6 +53,7 @@ Ejemplo:
 1. **JSON A ENVIAR**
 
 ```
+
 {
         "external_id": "8f6568f5-e478-4ae2-8d21-0b91c0112e57",
         "ticket": "1548517805048"
