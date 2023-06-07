@@ -52,15 +52,15 @@ Ejemplo:
 
 1. **JSON A ENVIAR**
 
-´´´
+```
 {
         "external_id": "8f6568f5-e478-4ae2-8d21-0b91c0112e57",
         "ticket": "1548517805048"
 }
 
-´´´
+```
 
-´´´
+```
 {
     "success": true,
     "data": {
@@ -78,4 +78,4 @@ Ejemplo:
     }
 }
 
-´´´
+```
