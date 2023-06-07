@@ -16,7 +16,7 @@ Se descargara un archivo en formato Excel.
 
 ![Alt text](img/plugin21.jpg)
 
-::: IMPORTANTE:
+:::info IMPORTANTE:
 
 - El nombre del producto debe estar en la casilla Nombre, y en la casilla **Publicado** debe insertar el número 1.
 - La categoría tiene que estar previamente creada previamente.

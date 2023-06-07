@@ -103,7 +103,6 @@ Para modificar el formato del comprobante necesita agregar el siguiente objeto a
     "formato_pdf":"ticket"
   }
 
-
 ```
 
 Los formatos admitidos son **A4** y **ticket**, para **Facturas, Boletas y Notas**, los demás comprobantes solo cuentan con el formato A4. Tenga en cuenta que si no envia el formato, por defecto será A4.
@@ -175,6 +174,5 @@ Los formatos admitidos son **A4** y **ticket**, para **Facturas, Boletas y Notas
     "formato_pdf":"ticket"
   }
 }
-
 
 ```
