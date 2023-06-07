@@ -11,14 +11,14 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://documentacion.fastura.app',
+  url: 'https://admin.fastura.app',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/documentacion/',
+  baseUrl: '/admin/',
 
   // GitHub pages deployment config.
   organizationName: 'fastura',
-  projectName: 'documentacion',
+  projectName: 'admin',
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
 
