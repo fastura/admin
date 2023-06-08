@@ -4,14 +4,12 @@
 
 Para enviar el comprobante mediante correo electrónico necesita agregar el siguiente objeto al **json** principal.
 
-## OBJETO
+### OBJETO
 
-```
-
+```json
 "acciones": { 
     "enviar_email":true
  }
-
 ```
 
 :::danger IMPORTANTE:
@@ -20,12 +18,11 @@ Tenga en cuenta que su cliente debe tener un correo válido para que el envio se
 
 :::
 
-**Ejemplo:**
+### Ejemplo:
 
-1. **JSON A ENVIAR**
+### 1. JSON A ENVIAR
 
-```
-
+```json
 {
   "serie_documento": "F001",
   "numero_documento": "#",
@@ -43,14 +40,7 @@ Tenga en cuenta que su cliente debe tener un correo válido para que el envio se
     "codigo_pais": "PE",
     "ubigeo": "150101",
     "direccion": "Av. 2 de Mayo",
-    "correo_electronico": "micorreo@gmail.com
-				document.getElementById('cloak7aaf291a15d316fb28dce27d9a715818').innerHTML = '';
-				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
-				var path = 'hr' + 'ef' + '=';
-				var addy7aaf291a15d316fb28dce27d9a715818 = 'm&#105;c&#111;rr&#101;&#111;' + '&#64;';
-				addy7aaf291a15d316fb28dce27d9a715818 = addy7aaf291a15d316fb28dce27d9a715818 + 'gm&#97;&#105;l' + '&#46;' + 'c&#111;m';
-				var addy_text7aaf291a15d316fb28dce27d9a715818 = 'm&#105;c&#111;rr&#101;&#111;' + '&#64;' + 'gm&#97;&#105;l' + '&#46;' + 'c&#111;m';document.getElementById('cloak7aaf291a15d316fb28dce27d9a715818').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy7aaf291a15d316fb28dce27d9a715818 + '\'>'+addy_text7aaf291a15d316fb28dce27d9a715818+'<\/a>';
-		",
+    "correo_electronico": "micorreo@gmail.com",
     "telefono": "427-1148"
   },
   "totales": {
@@ -87,32 +77,27 @@ Tenga en cuenta que su cliente debe tener un correo válido para que el envio se
     "enviar_email":true
   }
 }
-
-
 ```
 
 ## CAMBIAR FORMATO DE REPRESENTACIÓN IMPRESA
 
 Para modificar el formato del comprobante necesita agregar el siguiente objeto al json principal.
 
-## OBJETO
+### OBJETO
 
-```
-
+```json
 "acciones": {  
     "formato_pdf":"ticket"
   }
-
 ```
 
 Los formatos admitidos son **A4** y **ticket**, para **Facturas, Boletas y Notas**, los demás comprobantes solo cuentan con el formato A4. Tenga en cuenta que si no envia el formato, por defecto será A4.
 
-**Ejemplo:**
+### Ejemplo:
 
-1. **JSON A ENVIAR**
+### 1. JSON A ENVIAR
 
-```
-
+```json
 {
   "serie_documento": "F001",
   "numero_documento": "#",
@@ -130,14 +115,7 @@ Los formatos admitidos son **A4** y **ticket**, para **Facturas, Boletas y Notas
     "codigo_pais": "PE",
     "ubigeo": "150101",
     "direccion": "Av. 2 de Mayo",
-    "correo_electronico": "correo@gmail.com
-				document.getElementById('cloak58293d9cfc13f78d61feb86aabfd01a6').innerHTML = '';
-				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
-				var path = 'hr' + 'ef' + '=';
-				var addy58293d9cfc13f78d61feb86aabfd01a6 = 'c&#111;rr&#101;&#111;' + '&#64;';
-				addy58293d9cfc13f78d61feb86aabfd01a6 = addy58293d9cfc13f78d61feb86aabfd01a6 + 'gm&#97;&#105;l' + '&#46;' + 'c&#111;m';
-				var addy_text58293d9cfc13f78d61feb86aabfd01a6 = 'c&#111;rr&#101;&#111;' + '&#64;' + 'gm&#97;&#105;l' + '&#46;' + 'c&#111;m';document.getElementById('cloak58293d9cfc13f78d61feb86aabfd01a6').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy58293d9cfc13f78d61feb86aabfd01a6 + '\'>'+addy_text58293d9cfc13f78d61feb86aabfd01a6+'<\/a>';
-		",
+    "correo_electronico": "correo@gmail.com",
     "telefono": "427-1148"
   },
   "totales": {
@@ -174,5 +152,4 @@ Los formatos admitidos son **A4** y **ticket**, para **Facturas, Boletas y Notas
     "formato_pdf":"ticket"
   }
 }
-
 ```

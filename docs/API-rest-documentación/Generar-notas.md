@@ -6,12 +6,11 @@ En ocasiones, se producen **errores en la emisión de facturas** a compradores o
 
 Una nota de crédito es un documento legal que se utiliza en transacciones de compraventa donde interviene un descuento posterior a la emisión de la factura, una anulación total, un cobro de un gasto incurrido de más, devolución de bienes.
 
-Ejemplo:
+### Ejemplo:
 
-1. **JSON A ENVIAR**
+### 1. JSON A ENVIAR
 
-```
-
+```json
 {
   "serie_documento": "FC01",
   "numero_documento": "#",
@@ -32,14 +31,7 @@ Ejemplo:
     "codigo_pais": "PE",
     "ubigeo": "150101",
     "direccion": "Av. 2 de Mayo",
-    "correo_electronico": "demo@gmail.com
-				document.getElementById('cloaka54f966b8ed57adcd3dae8509275b0fb').innerHTML = '';
-				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
-				var path = 'hr' + 'ef' + '=';
-				var addya54f966b8ed57adcd3dae8509275b0fb = 'd&#101;m&#111;' + '&#64;';
-				addya54f966b8ed57adcd3dae8509275b0fb = addya54f966b8ed57adcd3dae8509275b0fb + 'gm&#97;&#105;l' + '&#46;' + 'c&#111;m';
-				var addy_texta54f966b8ed57adcd3dae8509275b0fb = 'd&#101;m&#111;' + '&#64;' + 'gm&#97;&#105;l' + '&#46;' + 'c&#111;m';document.getElementById('cloaka54f966b8ed57adcd3dae8509275b0fb').innerHTML += '<a ' + path + '\'' + prefix + ':' + addya54f966b8ed57adcd3dae8509275b0fb + '\'>'+addy_texta54f966b8ed57adcd3dae8509275b0fb+'<\/a>';
-		",
+    "correo_electronico": "demo@gmail.com",
     "telefono": "427-1148"
   },
   "totales": {
@@ -73,13 +65,11 @@ Ejemplo:
     }
   ]
 }
-
 ```
 
-2. **JSON RESPUESTA**
+### 2. JSON RESPUESTA
 
-```
-
+```json
 {
     "success": true,
     "data": {
@@ -100,21 +90,19 @@ Ejemplo:
         "description": "La Nota de Crédito numero FC01-1, ha sido aceptada",
         "notes": []
     }}
-
-
 ```
 
 ## NOTA DÉBITO - FACTURA
 
 Una de estas formas es la nota de débito y se utiliza cuando un comprador quiere informar a un vendedor de que ha aumentado el precio de su deuda o que la cantidad que había pagado era errónea y debe pagar más.
 
-Ejemplo:
+### Ejemplo:
 
-1. **JSON A ENVIAR**
+### 1. JSON A ENVIAR
 
-```
-
+```json
 {
+  {
   "serie_documento": "FD01",
   "numero_documento": "#",
   "fecha_de_emision": "2018-10-09",
@@ -134,14 +122,7 @@ Ejemplo:
     "codigo_pais": "PE",
     "ubigeo": "150101",
     "direccion": "Av. 2 de Mayo",
-    "correo_electronico": "demo@gmail.com
-				document.getElementById('cloakd0ce5c5ac24bfbec0b60760197e5e082').innerHTML = '';
-				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
-				var path = 'hr' + 'ef' + '=';
-				var addyd0ce5c5ac24bfbec0b60760197e5e082 = 'd&#101;m&#111;' + '&#64;';
-				addyd0ce5c5ac24bfbec0b60760197e5e082 = addyd0ce5c5ac24bfbec0b60760197e5e082 + 'gm&#97;&#105;l' + '&#46;' + 'c&#111;m';
-				var addy_textd0ce5c5ac24bfbec0b60760197e5e082 = 'd&#101;m&#111;' + '&#64;' + 'gm&#97;&#105;l' + '&#46;' + 'c&#111;m';document.getElementById('cloakd0ce5c5ac24bfbec0b60760197e5e082').innerHTML += '<a ' + path + '\'' + prefix + ':' + addyd0ce5c5ac24bfbec0b60760197e5e082 + '\'>'+addy_textd0ce5c5ac24bfbec0b60760197e5e082+'<\/a>';
-		",
+    "correo_electronico": "demo@gmail.com",
     "telefono": "427-1148"
   },
   "totales": {
@@ -175,13 +156,11 @@ Ejemplo:
     }
   ]
 }
-
 ```
 
-2. **JSON RESPUESTA**
+### 2. JSON RESPUESTA
 
-```
-
+```json
 {
     "success": true,
     "data": {
@@ -203,6 +182,4 @@ Ejemplo:
         "notes": []
     }
 } 
-
-
 ```

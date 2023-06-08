@@ -34,7 +34,7 @@ Al realizar compras añadiendo productos al carrito de compras solo permitirá e
 
 **[https://www.youtube.com/watch?v=j1nWw7b6lF4](https://www.youtube.com/watch?v=j1nWw7b6lF4)**
 
-**Impuesto:**
+### Impuesto:
 
 Para agregar impuestos para el producto, selecciona la siguiente casilla de selección: 
 

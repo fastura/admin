@@ -6,26 +6,24 @@ Cuando se genera una boleta, esta no se envía inmediatamente a Sunat. Este docu
 
 Cuando haya culminado este procedimiento, deberá consultar el ticket del resumen generado, se explicará en el siguiente punto.
 
-Url: **[http://demo.fastura.app/api/summaries](http://demo.fastura.app/api/summaries)**
-Token: oZoKGFDzqGJfJilCHowJlZrTadQRBtuJ2fr3PkJz02aU46WPPg
+**Url:** http://demo.fastura.app/api/summaries
 
-Ejemplo:
+**Token:** oZoKGFDzqGJfJilCHowJlZrTadQRBtuJ2fr3PkJz02aU46WPPg
 
-1. **JSON A ENVIAR**
+### Ejemplo:
 
-````
+### 1. **JSON A ENVIAR**
 
+```json
 {
   "fecha_de_emision_de_documentos": "2019-01-20",
   "codigo_tipo_proceso": "1"
 }
+```
 
-````
+### 2. **JSON RESPUESTA**
 
-2. **JSON RESPUESTA**
-
-````
-
+```json
 {
     "success": true,
     "data": {
@@ -33,16 +31,13 @@ Ejemplo:
         "ticket": "1548516520467"
     }
 }
-
-````
+```
 
 ### RESUMEN DIARIO TICKET
 
 Con este json puede enviar su resumen diario ticket.
 
-````
-
+```json
         "external_id": "9a03b745-78c3-403d-afed-b9cef82be746",
         "ticket": "1550260529157"
-
-````
+```

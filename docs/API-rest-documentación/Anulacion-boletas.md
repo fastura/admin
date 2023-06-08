@@ -6,14 +6,14 @@ Cuando se genera una anulación de boleta, esta no se envía inmediatamente a Su
 
 Cuando haya culminado este procedimiento, deberá consultar el ticket del resumen de anulación generado, se explicará en el siguiente punto.
 
-- **Url:** [http://demo.fastura.app/api/summaries](http://demo.fastura.app/api/summaries)
+- **Url:** http://demo.fastura.app/api/summaries
 - **Token:** oZoKGFDzqGJfJilCHowJlZrTadQRBtuJ2fr3PkJz02aU46WPPg
 
-**Ejemplo:**
+### Ejemplo:
 
-1. JSON A ENVIAR
+### 1. JSON A ENVIAR
 
-```
+```json
 {
   "fecha_de_emision_de_documentos": "2019-01-20",
   "codigo_tipo_proceso": "3",
@@ -26,9 +26,9 @@ Cuando haya culminado este procedimiento, deberá consultar el ticket del resume
 }
 ```
 
-2. **JSON RESPUESTA**
+### 2. JSON RESPUESTA
 
-```
+```json
 {
     "success": true,
     "data": {
@@ -42,17 +42,17 @@ Cuando haya culminado este procedimiento, deberá consultar el ticket del resume
 
 Para consultar el ticket del resumen de anulación generado puede usar el siguiente servicio, necesitará la **url**, el **token**, el **external_id** (resumen) y el **numero de ticket**.
 
-- **Url:** **[http://demo.fastura.app/api/summaries/status](http://demo.fastura.app/api/summaries/status)**
+- **Url:** http://demo.fastura.app/api/summaries/status
 - **Token:**
 oZoKGFDzqGJfJilCHowJlZrTadQRBtuJ2fr3PkJz02aU46WPPg
 
 Cuando haya culminado este procedimiento, el resumen de anulación con la boletas que lo conforman han sido aceptadas exitosamente por Sunat, es decir el (los) documento(s) han sido anulados.
 
-Ejemplo:
+### Ejemplo:
 
-1. **JSON A ENVIAR**
+### 1. JSON A ENVIAR
 
-```
+```json
 
 {
         "external_id": "8f6568f5-e478-4ae2-8d21-0b91c0112e57",
@@ -61,7 +61,9 @@ Ejemplo:
 
 ```
 
-```
+### 2. JSON RESPUESTA
+
+```json
 {
     "success": true,
     "data": {

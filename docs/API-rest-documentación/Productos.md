@@ -4,13 +4,13 @@
 
 Para registrar productos debe enviar hacia:
 
-- Url: **[http://demo.fastura.app/api/item](http://demo.fastura.app/api/item)**
+- **Url:** http://demo.fastura.app/api/item
 
-Ejemplo:
+### Ejemplo:
 
-1. **JSON A ENVIAR**
+### 1. JSON A ENVIAR
 
-````
+```json
 {
     "item_type_id": "01",
     "internal_id": "123456",
@@ -48,11 +48,9 @@ Ejemplo:
 }
 ```
 
-2. **JSON RESPUESTA**
+### 2. JSON RESPUESTA
 
-
-````
-
+```json
 {
     "success": true,
     "msg": "Producto registrado con éxito",
@@ -77,19 +75,17 @@ Ejemplo:
         "aux_quantity": 1
     }
 }
-
 ```
 
 ## LISTAR PRODUCTOS
 
 Para listar productos debe enviar por **método get**:
 
-- Url: **[http://demo.fastura.app/api/document/search-items](http://demo.fastura.app/api/document/search-items)**
+- **Url:** http://demo.fastura.app/api/document/search-items
 
-1. **JSON RESPUESTA**
+### 1. JSON RESPUESTA
 
-```
-
+```json
 {
     "success": true,
     "data": {
@@ -169,18 +165,17 @@ Para listar productos debe enviar por **método get**:
         ]
     }
 }
-
-
 ```
 
 ## BUSCAR PRODUCTOS
 
 Para buscar productos debe enviar por método get:
 
-- **Url:** **[http://demo.fastura.app/api/document/search-items?input=cod_interno_o_descripcion](http://demo.fastura.app/api/document/search-items?input=cod_interno_o_descripcion)**
+- **Url:** http://demo.fastura.app/api/document/search-items?input=cod_interno_o_descripcion
 
-```
+### 1. JSON RESPUESTA
 
+```json
 {
     "success": true,
     "data": {
@@ -219,19 +214,17 @@ Para buscar productos debe enviar por método get:
         ]
     }
 }
-
 ```
 
 ## EDITAR PRODUCTOS
 
 Para editar productos debe enviar a:
 
-- **Url**: **[http://demo.fastura.app/api/items/[id_del_producto]/update](http://demo.fastura.app/api/items/[id_del_producto]/update)**
+- **Url**: http://demo.fastura.app/api/items/[id_del_producto]/update
 
-1. **JSON A ENVIAR**
+### 1. JSON A ENVIAR
 
-```
-
+```json
 {
     "id": 3946,
     "item_type_id": "01",
@@ -271,14 +264,11 @@ Para editar productos debe enviar a:
     "lots_enabled": false,
     "lots": []
 }
-
-
 ```
 
-2. **JSON RESPUESTA**
+### 2. JSON RESPUESTA
 
-```
-
+```json
 {
     "success": true,
     "msg": "Producto editado con éxito",
@@ -303,6 +293,4 @@ Para editar productos debe enviar a:
         "aux_quantity": 1
     }
 }
-
-
 ```
