@@ -22,7 +22,7 @@ Siga los pasos de este **[vídeo](https://www.youtube.com/watch?v=Q1-sTSSdrMY)**
 
 ## Agregar Productos
 
-Para agregar productos, relacionados con el sistema de facturación, sigue todos los pasos en este [artículo](https://buho.la/ayuda/servicios/fastura-reseller/api-rest-documentacion/agregar-productos-conectados-a-mi-sistema-de-facturacion).
+Para agregar productos, relacionados con el sistema de facturación, sigue todos los pasos en este **[artículo](https://buho.la/ayuda/servicios/fastura-reseller/api-rest-documentacion/agregar-productos-conectados-a-mi-sistema-de-facturacion)**.
 
 ## Manejar Inventario de los Productos
 
@@ -36,7 +36,7 @@ Al realizar compras añadiendo productos al carrito de compras solo permitirá e
 
 ### Impuesto:
 
-Para agregar impuestos para el producto, selecciona la siguiente casilla de selección: 
+Para agregar impuestos para el producto, selecciona la siguiente casilla de selección:
 
 ![Alt text](img/pullgin4.jpg)
 
@@ -44,7 +44,7 @@ Seguido seleccionar la siguiente opción:
 
 ![Alt text](img/plugin11.jpg)
 
-Para configurar el porcentaje del IGV, complete los siguientes campos como en la imagen: 
+Para configurar el porcentaje del IGV, complete los siguientes campos como en la imagen:
 
 ![Alt text](img/plugin12.jpg)
 
