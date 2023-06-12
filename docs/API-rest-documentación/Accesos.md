@@ -28,7 +28,7 @@ Estos datos los extraes de la plataforma en la seccion  USUARIOS, LOCALES Y SERI
 - Valide si los datos del JSON son correctos
 - Inicie la integración de la API con su aplicativo
 
-:::alert IMPORTANTE:
+:::danger IMPORTANTE:
 
 Recomendamos construir el archivo JSON teniendo en cuenta las especificaciones indicadas en **[http://json.org](http://json.org)** y los datos correctos en cada atributo del JSON.
 
