@@ -15,3 +15,5 @@ Explora nuestros diversos módulos, desde el panel de control principal hasta la
 Nuestra documentación ha sido diseñada teniendo en cuenta tus necesidades, por lo que podrás encontrar la información que buscas de forma rápida y sencilla. Si tienes preguntas adicionales o necesitas asistencia adicional, nuestro equipo de soporte estará encantado de ayudarte en todo momento.
 
 Sumérgete en la documentación de Fastura (Reseller) y descubre cómo esta herramienta puede transformar la forma en que administras tus tareas diarias. ¡Estamos emocionados de acompañarte en este viaje hacia una gestión eficiente y exitosa!
+
+![Alt text](Administrador/img/dashboard-fastura-ac4c8529.webp)
