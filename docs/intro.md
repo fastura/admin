@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 slug: /
-title: Como empezar
+title: Bienvenido a la documentación de Fastura (Reseller)!
 ---
 
 # ¡Bienvenidos a la documentación de Fastura (Reseller)!
