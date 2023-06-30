@@ -1,4 +1,4 @@
-# Descarga reportes contables a otros sistemas
+# Contabilidad
 
 En esta área podrás generar los reportes de cada período tributario para ser importados a diversos sistemas contables externos como CONCAR , SISCONT, FOXCONT y CONTASIS. Sigue estos pasos para realizarlo:
 

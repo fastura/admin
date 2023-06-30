@@ -1,4 +1,4 @@
-# Configuración Nivel Administrador Reseller
+# Configuración
 
 Puedes realizar las siguiente configuraciones dentro del sistema de facturación:
 

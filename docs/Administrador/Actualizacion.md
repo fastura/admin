@@ -1,4 +1,4 @@
-# Actualización de versión del facturador
+# Actualización
 
 Para tener la última versión del facturador con nuevos módulos y corrección de fixtures , se debe realizar el proceso de actualización. Recuerda realizar este proceso de manera periódica, siguiendo estos pasos:
 

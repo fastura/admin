@@ -1,4 +1,4 @@
-# Acciones con las cuentas de los clientes
+# Dashboard
 
 Ingresar al **Dashboard**, ubicar en **Listado de clientes** y veremos los siguientes datos del cliente y configuraciones.
 

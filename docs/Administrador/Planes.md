@@ -1,4 +1,4 @@
-# Crear planes para mis clientes
+# Planes
 
 Como reseller usted puede crear diferentes tipos de planes según conveniencia, podrá limitar el número de comprobantes o de usuarios por cada plan. Para esto seguimos los siguientes pasos:
 

@@ -1,4 +1,4 @@
-# Cómo crear una nueva cuenta cliente
+# Crear cuenta
 
 En este artículo veremos los pasos necesarios para crear una cuenta y así su cliente podrá acceder y empezar a usar el sistema de facturación. Puede crear un máximo de cuentas según su plan actual de reseller (Si usted compró el código fuente no tiene limites en la creación de cuentas).
 

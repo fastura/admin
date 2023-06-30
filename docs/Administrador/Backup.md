@@ -1,4 +1,4 @@
-# Backups: Descargar copias de seguridad
+# Backups
 
 Generar copias de seguridad de manera periódica es importante ya que contar con el respaldo de los datos de nuestros clientes, para generarlos es necesario:
 

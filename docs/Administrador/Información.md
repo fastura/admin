@@ -1,4 +1,4 @@
-# Información: Datos de Consumo
+# Información
 
 Si deseas conocer el consumo de recursos con el sistema de facturación, puedes consultar esta área:
 
