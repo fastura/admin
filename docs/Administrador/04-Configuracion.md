@@ -2,13 +2,13 @@
 
 Puedes realizar las siguiente configuraciones dentro del sistema de facturación:
 
-Iniciamos entrando a nuestro sistema Administrador donde visualizaremos el módulo de Configuración:
+Iniciamos entrando a nuestro sistema **Administrador** donde visualizaremos el módulo de **Configuración**:
 
 ![Alt text](img/1_config.jpg)
 
 ## Certificado PSE-datos SUNAT
 
-Si usted posee algún convenio con una PSE, para poder brindarle servicio a sus clientes, debe subir el certificado, usuario y contraseña; todos estos datos les brindará la PSE.
+Si usted posee algún convenio con una **PSE**, para poder brindarle servicio a sus clientes, debe subir el certificado, usuario y contraseña; todos estos datos les brindará la **PSE**.
 
 ![Alt text](img/3_config.png)
 
@@ -16,9 +16,11 @@ Si usted posee algún convenio con una PSE, para poder brindarle servicio a sus 
 
 Para integrar Culqi, es necesario colocar su usuario y contraseña para que los clientes hagan los pagos respectivos con tarjeta de crédito.
 
-:::info NOTA: Debe tener una cuenta de Culqi Activa. Puede crear una cuenta aquí: [culqi.com](https://culqi.com/).
+:::info NOTA:
+ Debe tener una cuenta de Culqi Activa. Puede crear una cuenta aquí: **[culqi.com](https://culqi.com/)**.
 
 ![Alt text](img/4_config.png)
+:::
 
 ## Consulta RUC/DNIe
 
@@ -28,9 +30,11 @@ Al ser un cliente nuestro, esta sección ya está configurada y no necesita real
 
 ## URL de descarga de Aplicación móvil
 
-El cliente final tiene la opción de usar la aplicación móvil que por el momento solo está disponible para la versión de Android; es un archivo APK, que se descarga y se instala en el teléfono (No desde la Play Store).
+El cliente final tiene la opción de usar la aplicación móvil que por el momento solo está disponible para la versión de Android; es un archivo APK, que se descarga y se instala en el teléfono.
 
-:::info IMPORTANTE:
+Descárgala con este enlace: **[https://buho.la/fastura.apk](https://buho.la/fastura.apk)**
+
+:::info IMPORTANTE
 
 Esta opción le da la ventaja de poder poner cualquier URL, para que su cliente solo haga click y pueda descargarlo.
 

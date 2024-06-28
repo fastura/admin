@@ -8,16 +8,16 @@ Ingresar al **Dashboard**, ubicar en **Listado de clientes** y veremos los sigui
 
 ![Alt text](img/acciones_de_cuenta_del_cliente2.png)
 
-1. Hostname: Nombre del link de acceso para la empresa.
-2. Nombre: Razón social de la empresa.
-3. RUC: Número de contribuyente.
-4. Plan: El plan afiliado que escogió el cliente.
-5. Correo: El correo del cliente.
-6. Entornos: DEMO (entorno prueba) o PRODUCCIÓN (entorno funcional).
-7. Total de Comprobantes: Total de Comprobantes desde el inicio del sistema.
-8. Notificaciones: alerta de comprobantes no enviados, pendientes de anulación y con algún error para enviar.
-9. Inicio Ciclo Facturación: Puedes elegir el inicio de tu ciclo de facturación.
-10. Comprobantes Ciclo de Facturación: Número de comprobantes al mes.
+1. **Hostname:** Nombre del link de acceso para la empresa.
+2. **Nombre:** Razón social de la empresa.
+3. **RUC:** Número de contribuyente.
+4. **Plan:** El plan afiliado que escogió el cliente.
+5. **Correo:** El correo del cliente.
+6. **Entornos:** DEMO (entorno prueba) o PRODUCCIÓN (entorno funcional).
+7. **Total de Comprobantes:** Total de Comprobantes desde el inicio del sistema.
+8. **Notificaciones:** alerta de comprobantes no enviados, pendientes de anulación y con algún error para enviar.
+9. **Inicio Ciclo Facturación:** Puedes elegir el inicio de tu ciclo de facturación.
+10. **Comprobantes Ciclo de Facturación:** Número de comprobantes al mes.
 
 ![Alt text](img/acciones_de_cuenta_del_cliente3.png)
 
@@ -37,15 +37,15 @@ Ingresar al **Dashboard**, ubicar en **Listado de clientes** y veremos los sigui
 
 ![Alt text](img/pago1.png)
 
-    1. **Fecha de pago:** Seleccionar el día de pago.
-    2. **Método de pago:** Seleccionar el método de pago de preferencia.
+ * **Fecha de pago:** Seleccionar el día de pago.
+ * **Método de pago:** Seleccionar el método de pago de preferencia.
 
 ![Alt text](img/pago2.png)
 
-    3. **Tarjeta:** Si seleccionó tarjeta en el método de pago aparecerá la opción caso contrario no aparecerá.
-    4. **Referencia:** Es un dato personal para que el sistema identifique los pagos realizados.
-    5. **Monto:** Ingrese el monto de la deuda.
-    6. **Pagar:** Hay dos botones, uno que es un check para confirmar la deuda y el otro que es un aspa que cancela la deuda.
+ * **Tarjeta:** Si seleccionó tarjeta en el método de pago aparecerá la opción caso contrario no aparecerá.
+ * **Referencia:** Es un dato personal para que el sistema identifique los pagos realizados.
+ * **Monto:** Ingrese el monto de la deuda.
+ * **Pagar:** Hay dos botones, uno que es un check para confirmar la deuda y el otro que es un aspa que cancela la deuda.
 
 21. **E.Cuentas:** Estado de cuenta, puedes visualizar si el cliente tiene algún pago pendiente.
 

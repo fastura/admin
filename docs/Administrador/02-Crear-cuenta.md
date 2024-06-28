@@ -57,4 +57,4 @@ Esta configuración le ayudará a sus clientes a enviar los comprobantes electr�
 
 Antes de finalizar usted puede permitir o no que la empresa pueda cambiar de demo a producción desde su cuenta.
 
-Luego de esto le da en el botón guardar y su nueva cuenta estará lista para ser usada.
+Luego de esto le da en el botón **Guardar** y su nueva cuenta estará lista para ser usada.
