@@ -100,7 +100,7 @@ Para generar un comprobante de retención puede usar el siguiente servicio, nece
 }
 ```
 
-## 2. JSON RESPUESTA
+### 2. JSON RESPUESTA
 
 ```json
 {

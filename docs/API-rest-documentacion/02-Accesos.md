@@ -5,7 +5,7 @@ El servicio se encuentra protegido con el fin de mantener la integridad y confid
 Inicialmente para hacer el uso de la api, necesitas un token y la url.
 
 - **URL:**  https://demo.pro5.fastura.app/api/documents
-- **TOKEN:** ZDlQ8lShTeGsC2XcosWAmNM9UR7Nwlo7TsxcRZuJ8DIYTTV46n
+- **TOKEN:** HOHYgwd4atPalTxqi2IIspythpLAU7eP239oByfjk9VuveiOpfUTm4Yg0Szt 
 
 :::info IMPORTANTE
 El Token lo puede extraer desde la plataforma en el módulo **USUARIOS, LOCALES Y SERIES - USUARIOS**:
@@ -18,7 +18,7 @@ El Token lo puede extraer desde la plataforma en el módulo **USUARIOS, LOCALES 
 1. Las peticiones a la API se realizan vía POST
 2. Debes enviar en el HEADER de tu solicitud la siguiente lo siguiente:
     - **Authorization**
-    - **Bearer**  oZoKGFDzqGJfJilCHowJlZrTadQRBtuJ2fr3PkJz02aU46WPPg
+    - **Bearer**  HOHYgwd4atPalTxqi2IIspythpLAU7eP239oByfjk9VuveiOpfUTm4Yg0Szt 
     - **Content-Type**  application/json
 3. Ingresar en el body o cuerpo el JSON.
 4. Finalmente recibirás la respuesta.

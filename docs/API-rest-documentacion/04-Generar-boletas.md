@@ -91,7 +91,7 @@ Venta gravada de productos o servicios en cualquiera de las etapas de producció
 Para fines prácticos se corto la longitud del QR.
 :::
 
-### BOLETA GRAVADA - CONTINGENCIA
+## BOLETA GRAVADA - CONTINGENCIA
 
 Para generar una **factura de contingencia** previamente debe registrar las series de contingencia, en el módulo U**suarios/Locales & Series** sección **Establecimientos**.
 
