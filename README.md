@@ -34,7 +34,7 @@ $ USE_SSH=true npm run deploy
 
 Sin usar SSH:
 
+```pwsh
+cmd /C 'set "GIT_USER=<GITHUB_USERNAME>" && npm run deploy'
 ```
-$ GIT_USER=<Your GitHub username> npm run deploy
-```
-Este comando publica el contenido estatico a través de la rama `gh-pages`.
+Este comando (para windows) publica el contenido estatico a través de la rama `gh-pages`.
