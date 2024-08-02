@@ -124,7 +124,7 @@ const config = {
       prism: {
         theme: darkCodeTheme,
         darkTheme: darkCodeTheme,
-        additionalLanguages: ['php'],
+        additionalLanguages: ['php', 'bash', 'yaml', 'nginx'],
       },
       theme: {
         customCss: require.resolve('./src/css/custom.css'),
