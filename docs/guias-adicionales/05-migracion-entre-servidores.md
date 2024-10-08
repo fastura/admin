@@ -114,7 +114,7 @@ volumes:
         driver: "local"
 ```
 
-* En el ejemplo de arriba, el texto de **"{numero nuevo}"**, se tiene que cambiar a un nombre disponible (por ejemplo **nginx12**) que se encunetra dentro de tu servidor. Puedes nombrar los contenedores con ```docker ps```.
+* En el ejemplo de arriba, el texto de **"\{numero nuevo\}"**, se tiene que cambiar a un nombre disponible (por ejemplo **nginx12**) que se encunetra dentro de tu servidor. Puedes nombrar los contenedores con ```docker ps```.
 
 ### Cambiar el puerto de FPM dentro del proxy
 

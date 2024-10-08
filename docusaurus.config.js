@@ -1,8 +1,7 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const {themes} = require('prism-react-renderer');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Documentación Facturador electrónico',
@@ -39,7 +38,9 @@ const config = {
       ({
         docs: {
           // sidebarPath: require.resolve('./sidebars.js'),
-          routeBasePath: '/'
+          routeBasePath: '/',
+                    docItemComponent: "@theme/ApiItem", // Derived from docusaurus-theme-openapi
+
         },
         // blog: false,
         theme: {
@@ -48,8 +49,26 @@ const config = {
       }),
     ],
   ],
-  plugins: [require.resolve("@cmfcmf/docusaurus-search-local")],
-
+  plugins: [
+    require.resolve('docusaurus-lunr-search'),
+    [
+      'docusaurus-plugin-openapi-docs',
+      {
+        id: "facturador", // plugin id
+        docsPluginId: "classic", // configured for preset-classic
+        config: {
+          facturador : {
+            specPath: "apifacturador/facturador.yaml",
+            outputDir: "docs/facturador",
+            sidebarOptions: {
+              groupPathsBy: "tag",
+            },
+          },
+        }
+      },
+    ]
+  ],
+  themes: ["docusaurus-theme-openapi-docs"],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -62,6 +81,11 @@ const config = {
           src: 'img/fastura.svg',
         },
         items: [
+          // {
+          //   label: 'Api del facturador',
+          //   position: 'left',
+          //   to: '/docs/category/facturador-api'
+          // }
           // {
           //   type: 'docSidebar',
           //   sidebarId: 'tutorialSidebar',
@@ -122,8 +146,8 @@ const config = {
         // copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
-        theme: darkCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: themes.dracula,
+        darkTheme: themes.dracula,
         additionalLanguages: ['php', 'bash', 'yaml', 'nginx'],
       },
       theme: {

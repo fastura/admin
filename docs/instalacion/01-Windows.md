@@ -88,7 +88,7 @@ Algunas veces podrian presentarse un error de puertos ocupados, esto se solucion
  
 
 ### Hostname
-En laragon crea un dominio, puede cambiarlo a su gusto, por ejemplo **{name}.text**, **{name}.pe**, **{name}.oo**
+En laragon crea un dominio, puede cambiarlo a su gusto, por ejemplo **\{name\}.text**, **\{name\}.pe**, **\{name\}.oo**
 
  ![alt text](img/dominios-laragon.png)
 

@@ -24,6 +24,8 @@ $ npm build
 ```
 Este comando genera contenido estático en el directorio `build` y se puede usar en cualquier hosting. Esta carpeta es ignorado en el repositorio.
 
+La busqueda unicamente funciona cuando el servidor esta usando la carpeta build.
+
 ### Deployment
 
 Usando SSH:
@@ -38,3 +40,11 @@ Sin usar SSH:
 cmd /C 'set "GIT_USER=<GITHUB_USERNAME>" && npm run deploy'
 ```
 Este comando (para windows) publica el contenido estatico a través de la rama `gh-pages`.
+
+
+### Actualización de v2 hacia v3.5.2
+
+#### Dependencias descargadas: 
+
+- [docusaurus-lunr-search](https://github.com/praveenn77/docusaurus-lunr-search), este dependencia no funciona en el entorno de desarrollo, unicamente cuando se haga build de la documentación.
+- [docusaurus-openapi-docs](), plugin para crear api a través de la especificación de [OpenAPi](https://swagger.io/specification/)
