@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfastura=self.webpackChunkfastura||[]).push([[9278],{89278:(s,a,u)=>{u.r(a)}}]);
