@@ -58,8 +58,8 @@ const config = {
         docsPluginId: "classic", // configured for preset-classic
         config: {
           facturador : {
-            specPath: "apifacturador/facturador.yaml",
-            outputDir: "docs/facturador",
+            specPath: "apifacturador/GuiaDeRemision/generarGuiaRemision.yaml",
+            outputDir: "docs/facturador/Guía de Remisión",
             sidebarOptions: {
               groupPathsBy: "tag",
             },
@@ -81,6 +81,7 @@ const config = {
           src: 'img/fastura.svg',
         },
         items: [
+          { to: 'facturador/introduccion', label: 'Documentación de API REST', position: 'left' },
           // {
           //   label: 'Api del facturador',
           //   position: 'left',

@@ -1,0 +1,506 @@
+---
+id: registrar-enviar-resumen
+title: "REGISTRAR Y ENVIAR RESÚMEN"
+description: "Cuando se genera una boleta, esta no se envía inmediatamente a Sunat. Este documento se envía mediante un resúmen, este puede contener 1 o más boletas, para registrar y enviar el resúmen puede usar el"
+sidebar_label: "REGISTRAR Y ENVIAR RESÚMEN"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWEtTG0cQ/itTe8hBJS16AUY3jBUCxlgR4FRsU6rR7kgaszuznpkFZEp/JDcfffApt1z1x/L17OoBBuOq5JIKt93e7q8f09P9STeB42MbdN4FPJPBeTWIhY2MzJzUKugEezlXsWZWsLFQwnCWK86GOhGOV5mwjjPlvwp1Of/KmVSpiCV3PBXKCcbZCfRdyLoWb7GOcpKvG3h1Us0VM8LO/4KCBxYsy0UsWKTxFZ5Zg2mWzj/b0rutsowjHiPG0jrDDZsSpsSDSJZQJUhuC/F7ZeU4lz42K8yljKSuMiUiYaXjZv6ZJcjQJFVSdvoCAFMSjUQ04QxAIpVWzv9U9JzwZSzsY+4jHWmTEowqY8jLbKAeSbNKdglpvZnNk8K70zHA1oGLqkMaMkT/XpXnMeFTzqI8SaXieC3qZXQEBymlh6xiMRSEucT3OcnoQjh8W4a38AALOpXrLJGRj0X4JFb1ynLAllFUKpXuB5Fmie7gkWSsxiqVV/MvyIBkrPf65HQpP+sfkWziXGY7GxswhHPeCGOR6hbC3grlMA8zsYEW3EBUqKFE0Rbmp69fdo8JQL/VL/d/fvHp4/7h6FAme7/oq8PkrTnl8a/95y4/bI5Mq3dx+Kne5Gftrd96vfF7FVQDnSFB6ueDGB29bJifinbpF3WAnhE4Ruue63gadG7uXIRGyA5PXh+zXdY9fnOw24d+0ZqOdHnm60a6Gx8sGdwENpqIlNOTm2YCEHr4QUQOhkgZITnkSF99JwxiMfDNpRU9Lq+KXbNH1FKNYe/bDH6DmDuBd3HNcRak0qw327VGo1ZvBzMKMJZjPXAy0wPfHVbfB7cybwSzWVEHaURMQ+GR4O73gSnipPOIPeE85nqBrtPkqT7fq0/t6uqqRknUMIuEAgQ5e6rYWsVugTqTCy+wGYZdUYNmvf7tJfY3uN896Z11T053/XD4ly6xzSMEul7bocYI52q9GmWcqPEPIIprJ4ziyUDG3y8x5412tL21U2vFo2e1dn0zqvHNRr0m6nUxam212vF2k86umP2PHNd2q77T2GzvbLfadHSz2arw/bK8//Q+/79KReL2fb14oC55ImNQpix35LTdbH6r9YZ0fJmxmyNRiAnTiig30mFTvcOF59blhg947iZ0x67wRfiNxuPgfIbbkwo30bT+Mm19ATlpBrc3bkCw5lIY61ExfKDy6NYOCH8Rzgk1QTmFbgW1OkN6b9LMSfSVV5Qp9ZIs7iA+aiM/+ZTPfjAAuI/QDx6sSL0TvMIUGRGVCcNwUYlOcCQEBOWxIPfBhZiuxQbJSwiqgQKBLd69RjWQdBgTgAjjy0/zob/iC91FWzw+fNcn6gMDlaYmuRwVw7VsqgPljI5xeYiABneJelcxHXFyKKyncplXBourVIQxGqUjSgfmuc5hRzyiM7IgV+CTGhUGEyRVzaLE8z7rybsmuEs48EwXSWuglajwBa7JFbM6uYQJmCaGKkP5hfEI4L0RV9KmGpFNCwjEcSSmhDqZfx36d5FIorPR3djIBDE7SSyY2OcRnK8q6uH8D4ooh8AgED/TcR7IBeFp1SErELifC0Qils2QPfcUm15aITvWzhP8F/MvQ4l0IW2vpHtm/iUuxZsh65e/LgqOuhWyXZUnCFyXku2Q7efSW5pltSF/FrI97dDc0UKyEzLMAV80qb1tox6ynj+6YhvSbVww0HrY8J1Bdzjlfj+Vjdrv7h+cnPZ3++z3kp/Smpv/8ap7fLdTblYr7+nX3dOvu//8r7tydDuQgA1ceQxq3BC/um7KLVf8tYElsdxzWFgT2oP4dHMz5FZg08xmJMZRG9qpeLyELh/S6H13Dshy+NNi9Esj2CuuUe106lcQtnle7IzHmPysuoDYjWilP2DsKeit3U1lh/Kw/IGaAg3SNeTq+ksR9kPbt3ygdBbLT03XIvF7lPm1WS2j9UvWR3+vxY/s6QKIXNNufxBqyQgWFmOMdTfwurNzLO+/AQsJhhU=
+sidebar_class_name: "post api-method"
+info_path: facturador/Generar Resúmenes/introduccion
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"REGISTRAR Y ENVIAR RESÚMEN"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/summaries"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Cuando se genera una boleta, esta no se envía inmediatamente a Sunat. Este documento se envía mediante un resúmen, este puede contener 1 o más boletas, para registrar y enviar el resúmen puede usar el 
+siguiente servicio, necesitará la url, el token y la fecha de emisión de las boletas que conformarán el resumen, es decir mediante la fecha se consultará todas las boletas generadas.  
+
+Cuando haya culminado este procedimiento, deberá consultar el ticket del resumen generado, se explicará en el siguiente punto.  
+
+***Ejemplo:***  
+ - **Método:** POST  
+ - **URL:** https://empresa1.demo3pro6.ibu.pe/api/summaries  
+ - **TOKEN:** oZoKGFDzqGJfJilCHowJlZrTadQRBtuJ2fr3PkJz02aU46WPPg
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<MimeTabs
+  className={"openapi-tabs__mime"}
+  schemaType={"request"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3><span
+          className={"openapi-schema__required"}
+        >
+          required
+        </span>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        <div
+          style={{"marginTop":"1rem","marginBottom":"1rem"}}
+        >
+          
+          
+          1. JSON A ENVIAR
+          
+          
+        </div>
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"fecha_de_emision_de_documentos"}
+          required={true}
+          schemaName={"date"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","format":"date","example":"2024-11-04"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"codigo_tipo_proceso"}
+          required={true}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"1"}}
+        >
+          
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem><TabItem
+    label={"application/xml"}
+    value={"application/xml"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3><span
+          className={"openapi-schema__required"}
+        >
+          required
+        </span>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        <div
+          style={{"marginTop":"1rem","marginBottom":"1rem"}}
+        >
+          
+          
+          1. JSON A ENVIAR
+          
+          
+        </div>
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"fecha_de_emision_de_documentos"}
+          required={true}
+          schemaName={"date"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","format":"date","example":"2024-11-04"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"codigo_tipo_proceso"}
+          required={true}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"1"}}
+        >
+          
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem><TabItem
+    label={"application/x-www-form-urlencoded"}
+    value={"application/x-www-form-urlencoded"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3><span
+          className={"openapi-schema__required"}
+        >
+          required
+        </span>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        <div
+          style={{"marginTop":"1rem","marginBottom":"1rem"}}
+        >
+          
+          
+          1. JSON A ENVIAR
+          
+          
+        </div>
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"fecha_de_emision_de_documentos"}
+          required={true}
+          schemaName={"date"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","format":"date","example":"2024-11-04"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"codigo_tipo_proceso"}
+          required={true}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"1"}}
+        >
+          
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          JSON RESPUESTA
+          
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"success"}
+                        required={false}
+                        schemaName={"boolean"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"boolean","example":true}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={true}
+                        className={"schemaItem"}
+                      >
+                        <details
+                          style={{}}
+                          className={"openapi-markdown__details"}
+                        >
+                          <summary
+                            style={{}}
+                          >
+                            <span
+                              className={"openapi-schema__container"}
+                            >
+                              <strong
+                                className={"openapi-schema__property"}
+                              >
+                                data
+                              </strong><span
+                                className={"openapi-schema__name"}
+                              >
+                                 object
+                              </span>
+                            </span>
+                          </summary><div
+                            style={{"marginLeft":"1rem"}}
+                          >
+                            <SchemaItem
+                              collapsible={false}
+                              name={"external_id"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","example":"aa14c769-3df8-405c-a510-e00ef3634d72"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"ticket"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","example":"1730915497341"}}
+                            >
+                              
+                            </SchemaItem>
+                          </div>
+                        </details>
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"success\": true,\n  \"data\": {\n    \"external_id\": \"aa14c769-3df8-405c-a510-e00ef3634d72\",\n    \"ticket\": \"1730915497341\"\n  }\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem><TabItem
+              label={"application/xml"}
+              value={"application/xml"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"success"}
+                        required={false}
+                        schemaName={"boolean"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"boolean","example":true}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={true}
+                        className={"schemaItem"}
+                      >
+                        <details
+                          style={{}}
+                          className={"openapi-markdown__details"}
+                        >
+                          <summary
+                            style={{}}
+                          >
+                            <span
+                              className={"openapi-schema__container"}
+                            >
+                              <strong
+                                className={"openapi-schema__property"}
+                              >
+                                data
+                              </strong><span
+                                className={"openapi-schema__name"}
+                              >
+                                 object
+                              </span>
+                            </span>
+                          </summary><div
+                            style={{"marginLeft":"1rem"}}
+                          >
+                            <SchemaItem
+                              collapsible={false}
+                              name={"external_id"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","example":"aa14c769-3df8-405c-a510-e00ef3634d72"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"ticket"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","example":"1730915497341"}}
+                            >
+                              
+                            </SchemaItem>
+                          </div>
+                        </details>
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"<root>\n  <success>true</success>\n  <data>\n    <external_id>aa14c769-3df8-405c-a510-e00ef3634d72</external_id>\n    <ticket>1730915497341</ticket>\n  </data>\n</root>"}
+                    language={"xml"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem><TabItem
+        label={"400"}
+        value={"400"}
+      >
+        <div>
+          
+          
+          Invalid input
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"422"}
+        value={"422"}
+      >
+        <div>
+          
+          
+          Validation exception
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      
