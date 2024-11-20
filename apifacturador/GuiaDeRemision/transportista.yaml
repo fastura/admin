@@ -102,7 +102,7 @@ components:
               example: "0000"
         serie_documento:
           type: string
-          example: "FD01"
+          example: "V001"
         numero_documento:
           type: string
           example: "#"
@@ -209,7 +209,7 @@ components:
             properties:
               codigo_interno:
                 type: string
-                example: "primer"
+                example: "prueba"
               cantidad:
                 type: number
                 example: 2
