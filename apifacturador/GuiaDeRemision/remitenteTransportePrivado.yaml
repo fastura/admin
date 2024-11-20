@@ -33,19 +33,13 @@ paths:
     post:
       tags:
         - api
-      summary: Generar Guia de Remisión
+      summary: Remitente | Transporte Privado
       description: |  
-        Las Guías de Remisión son documentos que sustentan el traslado de bienes 
-        entre distintas direcciones, existen distintas modalidades y aspectos relevantes.  
-
-        Para generar una guia de remision puede usar el siguiente servicio, necesitará la url, el token, y los datos del documento.  
-
         ***Ejemplo:***  
          - **Método:** POST  
-         - **URL:** https://empresa1.demo3pro6.ibu.pe/api/dispatches 
+         - **URL:** https://empresa1.demo3pro6.ibu.pe/api/dispatches  
          - **TOKEN:** HOHYgwd4atPalTxqi2IIspythpLAU7eP239oByfjk9VuveiOpfUTm4Yg0Szt  
-
-      operationId: generarGuiaRemision
+      operationId: remitenteTransportePrivado
       requestBody:
         description: 1. JSON A ENVIAR
         content:
@@ -79,7 +73,7 @@ paths:
             - write
             - read 
           
-# Formato Json de GENERAR GUIA DE REMISIÓN
+# Formato Json de Remitente | Transporte privado
 components:
   schemas:
     Pet:
@@ -94,7 +88,7 @@ components:
         fecha_de_emision:
           type: string
           format: date
-          example: "2024-11-04"
+          example: "2022-12-02"
         hora_de_emision:
           type: string
           format: time
@@ -131,13 +125,13 @@ components:
               example: "6"
             numero_documento:
               type: string
-              example: "10414711225"
+              example: "20601274133"
             apellidos_y_nombres_o_razon_social:
               type: string
               example: "EMPRESA XYZ S.A."
             nombre_comercial:
               type: string
-              example: "EMPRESA XYZ S.A."
+              example: "EMPRESA XYZ"
             codigo_pais:
               type: string
               example: "PE"
@@ -158,21 +152,21 @@ components:
           example: "aaaaaaaaaaaaaaa"
         codigo_modo_transporte:
           type: string
-          example: "01"
+          example: "02"
         codigo_motivo_traslado:
           type: string
-          example: "01"
+          example: "05"
         descripcion_motivo_traslado:
           type: string
           example: "El cliente solicito envia a su trabajo en ..."
         fecha_de_traslado:
           type: string
           format: date
-          example: "2019-01-16"
+          example: "2022-12-02"
         codigo_de_puerto:
           type: string
           example: ""
-        indicador_de_transbordo: 
+        indicador_de_transbordo:
           type: boolean
           example: false
         unidad_peso_total:
@@ -198,7 +192,7 @@ components:
               example: "PUNTO A"
             codigo_del_domicilio_fiscal:
               type: string
-              example: ""
+              example: "0000"
         direccion_llegada:
           type: object
           properties:
@@ -210,22 +204,7 @@ components:
               example: "PUNTO 2"
             codigo_del_domicilio_fiscal:
               type: string
-              example: ""
-        transportista:
-          type: object
-          properties:
-            codigo_tipo_documento_identidad:
-              type: string
-              example: "6"
-            numero_documento:
-              type: string
-              example: "10417844398"
-            apellidos_y_nombres_o_razon_social:
-              type: string
-              example: "aaaaaaaaa"
-            numero_mtc:
-              type: string
-              example: ""
+              example: "0000"
         chofer:
           type: object
           properties:
@@ -234,10 +213,19 @@ components:
               example: "1"
             numero_documento:
               type: string
-              example: "4177874"
+              example: "41784439"
+            nombres:
+              type: string
+              example: "JUAN"
+            apellidos:
+              type: string
+              example: "PEREZ"
+            numero_licencia:
+              type: string
+              example: "Q41784439"
         numero_de_placa:
           type: string
-          example: "A01-1254"
+          example: "A011254"
         items:
           type: array
           items:
@@ -245,21 +233,50 @@ components:
             properties:
               codigo_interno:
                 type: string
-                example: "P020"
+                example: "prueba"
               cantidad:
                 type: number
                 example: 2
+        documento_afectado:
+          type: object
+          properties:
+            serie_documento:
+              type: string
+              example: "F001"
+            numero_documento:
+              type: string
+              example: "190"
+            codigo_tipo_documento:
+              type: string
+              example: "01"
+        documento_relacionado:
+          type: array
+          items:
+            type: object
+            properties:
+              numero:
+                type: string
+                example: "F001-1"
+              empresa:
+                type: string
+                example: "Empresa ABC"
+              ruc:
+                type: string
+                example: "20123123123"
+              documento:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    example: "09"
+                  descripcion:
+                    type: string
+                    example: "Factura Electrónica"
 
       required:
         - serie_documento
-        - numero_documento
-        - codigo_tipo_operacion
-        - correo_electronico
         - datos_del_cliente_o_receptor
-        - fecha_de_vencimiento
-        - observaciones
         - direccion_llegada
-        - transportista
         - chofer
         - numero_de_placa
 
@@ -274,38 +291,13 @@ components:
           properties:
             number:
               type: string
-              example: "T001-1"
+              example: "T001-18"
             filename:
               type: string
-              example: "20415963255-09-T001-1"
+              example: "11111111111-09-T001-18"
             external_id:
               type: string
-              example: "89f6931f-9be0-4f92-80ad-8a7fbfce9160"
-        links:
-          type: object
-          properties:
-            xml:
-              type: string
-              example: "https://empresa1.demo3pro6.ibu.pe/downloads/dispatch/xml/89f6931f-9be0-4f92-80ad-8a7fbfce9160"
-            pdf:
-              type: string
-              example: "https://empresa1.demo3pro6.ibu.pe/downloads/dispatch/pdf/89f6931f-9be0-4f92-80ad-8a7fbfce9160"
-            cdr:
-              type: string
-              example: "https://empresa1.demo3pro6.ibu.pe/downloads/dispatch/cdr/89f6931f-9be0-4f92-80ad-8a7fbfce9160"
-        response:
-          type: object
-          properties:
-            code: 
-              type: string
-              example: "0"
-            description:
-              type: string
-              example: "El Comprobante numero T001-1 ha sido aceptado"
-            notes:
-              type: array
-              example: []
-            
+              example: "9f297a80-c4d0-4fca-9ec9-a81d4434fbbe"
 
   requestBodies:
     Pet:

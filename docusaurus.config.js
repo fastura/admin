@@ -58,7 +58,7 @@ const config = {
         docsPluginId: "classic", // configured for preset-classic
         config: {
           facturador : {
-            specPath: "apifacturador/GuiaDeRemision/generarGuiaRemision.yaml",
+            specPath: "apifacturador/GuiaDeRemision/ticketCatalogoDatos.yaml",
             outputDir: "docs/facturador/Guía de Remisión",
             sidebarOptions: {
               groupPathsBy: "tag",
