@@ -24,7 +24,7 @@ Antes de instalar, se tiene que tener presente que hay dos proyectos de facturad
 
 ## Instalaciones 
 
-Este tópico es para ambos proyectos, asi qu funcionará con cualquier tecnologias que descargues respecto a la versión del facturador. 
+Este tópico es para ambos proyectos, asi que funcionará con cualquier tecnologias que descargues respecto a la versión del facturador. 
 
 ### Laragon
 
@@ -185,7 +185,7 @@ En laragon crea un dominio, puede cambiarlo a su gusto, por ejemplo **\{name\}.t
 
 Se le mostrará la pagina de login, las credenciales son:
  * Correo electrónico: **admin@gmail.com**
- * Contraseña: **1233456**
+ * Contraseña: **123456**
 
 ![Alt text](img/login-pro6.png)
 
