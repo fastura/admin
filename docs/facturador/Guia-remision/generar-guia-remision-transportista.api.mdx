@@ -1,0 +1,3464 @@
+---
+id: generar-guia-remision-transportista
+title: "Generar Guia de Remisión - Transportista"
+description: "Para generar una guia de remision de transportista puede usar el siguiente servicio, necesitará la url, el token, y los datos del documento."
+sidebar_label: "Generar Guia de Remisión - Transportista"
+hide_title: true
+hide_table_of_contents: true
+api: eJztXM1y2zgSfhUU5+ayaJGSY8unVbJKxpPEdtlyarOJiwWRkISEJDgAaEdx+WH2mMOc9jZXv9h0g5REWpQp52firaWTSkkQutFoNLr7+2Lx2tJ0oqyDdxZNuHWxbQVM+ZInmovYOrBOqKRkwmImqSRpDK9TTknAiGQRVzAHX2tJY5UIqbnSlCQpg7FUgQALieIgwWLNiGLykvtcbJOY+UxxTeXtf0hISSrDbZyqxUcWb5MZCYUiAdX4LwwHwk8j0CBsQt7H7+Otra3BBxYloTiAlzhGWmRr6/XtFy0CHCMnx2fDxfj56Sscm2qdqIOdHRCUTFHHDlgkOokUT2w+Su2E7cD+dwKuEqr9KVNz8eHxy8ERKvj1+Ne3k6ugS/UJDYeffufu4aFKZnqavOqf77ETt9MTT2fjDx97b9JLxo+T8fkw6r6dtM8+68xw0HZ0POwf5EYPQvJsKsZMwo5hm2/Y9PYPPw0FUeBVn0YJ7F+MQj4BT0gulE3OeExYNKJyIozDcvEz5qdxQGHOXU2FT1CpSMD9MQ2ZQi+bc4rxWIiIuOYBLPE+trYtkcBp4/kfBhAB+eG/gHM/zc98WDxvEJDs95Qp/VQEM+vg+k4EOTb57ez4iPTJ4OjNYf8U5vsC4iHWOJcmSch9s9rOB4UC15YC/0cUX+lZwkCFGH1gvgZBOC6wTXOmzDwmOfMW4VEQUFryeAIC7BP4McShYbvtWDfbVgyTpdhU6hcUGTN/Sr2Aefn2q0TGQkYUdmRB3LKSCrftdluO03Jc1DUVcmNVmkdlVU77wHHgLyryRcAnwtM82Xgz7R4KmosFJoTGBiHr/ZwvlVCu7l/gZIALpCM+YTWmOLttJzuPgEvm+2tcsRToX9rExVzzms5Etn8pmfBYCBZLEXO/ZkW87v+YRJSHti8i1KBBdiziGrmuuwen190v+Bx9F8CV8XnIhTfmyqdhjefhx7q5KXnfD01a9IQHDmCJfsBJlA/d43CN4frS4H4jnjw8/J121+nuOY7r7qIwTVgYYp7wZl4sohEkUjSffhaxp4TP69wweH1yOjjrk3+9/Tc5s/u2Mcjo8eBMmPw6DU14mvDE6BIjLLIU7WU1zqDln4IjI6ii3qKks5rIdkqSml8aWRXSoC4bZf7NagVa/DBxqJ75DYLSBiWEa0FYfAnNCSUqxZZkRD/gELFtu5TF79O/aRpfZAIPqqisu0YoweMA6lwgZG5CrEZClowYCREyGhclxzRUDGM2xuvtJUyBe4SuuyUvX7zGJSunQwIYMVmc3mkX8gLzRmkIKepeCackkFVzFpQS2BovLK4TXFeJOas+5/2Q+3pyfjQ8Jv1vSup5Ql/sKAzZhP7kHbnfYUelbv5x1qS9/W6309v/HjWplAFzSyLtb+Io37TfP9hDX9G0gn/29ve6y+paUwp+S2lMTphknwtrQUplMbivpu7tPWm7ne6uu3nF6rkdp+O4HbfoRE8tkEpBmkpJZyDMNYvUI/Wz2+1s7OijbBJgr0XUEufv8Dm6GiZfsilHXFjvymV2T0Lq1xnUhg5x18SbjyrGptB5UzqCzKNNN+LlS9OaGuG48z+oDToRFtZs7W3/9PDMTKayztDh8VvA31bJF98l8h7qLvd/zF03q574urvJoVWQddF6Ag7K2kq6cnNXmxE3s2954Sl0errc330PAuH5VxEITq/9tWjdyT2P7Ar0AAFydHctroDzNRizqger6mLu9gGLcldIIxcwievszJi2bkw5XvI5n6KwoXMaOueR4uWGzmnonEccng2d09A5DZ3T0DkNndPQOQ2d09A5DZ3T0DkNndPQOT+RzmldXV21sKVupTKEzAbxGTQET0PwPFIE3RA8DcHziMOzIXgagqcheBqCpyF4GoKnIXgagqcheBqCpyF4GoLn7yR4StZqmTIzAEpilXncBRx8cPcbXebrXADrTs4HZ8O++crY9/pGV+r7TBXDs6LJzu0Er22gMY+/WqqpZTqbMQ9ZTKMaDOUsf1rtXmspzj7hbaEh1LD7Nbj7Xep22V5rr9fba3X9ntPa77DdVgdeuj3X9QPWzqNpfmCn+bF8829ZNS7ewMU43K2K/cP4kkIjQHicpBoN6rru6qw3OMccD2Gf8CLjMOrE4iW5nkFuuLbGVOlUUo+meorJ4go+QRArGaTQixu4rRHTU4FfwkyEMo6nONO681VVC/XKSyaVUZtKCAir9vuuFi4wt+cMoyc7zrJVy8PH9y5C7lBcmYk8SgyON5cePhSSfzZ7Pt/QAFjeh0AyyrK9H1ivIfFigZXIAuSuOLBeMSaRFbjJgp97H9msWNsS/pJhccsCazEDUTxaAkogQFEWE9Lp8tuqg3m4VNSWjIGuqh/WL1YVyVykHCqI4yUbvLa8IONbTfiWODMkxpa82Bx6lpDnHYKrmt+6S2IVu9MlUVWDT3OutJ4pre32AVxWertIam6GH1dpxyresmrWT/TzKh24wvmtp/ystmOtp/WyT++l7h7Iz1XSc+ULsEq5WdY9tJqhziqZM0OPldmxTruKAXPWsVxWZRdVYHaqz3ZOOtXdgDJRVqCVNlHvbqR+heP5pts0p2M2vE3FACwyLsayJalSb9KadDrnPwqovMhxVMDtAqYuXaYCV1HJVLz7ViuRPSiaWc0QPMBiU4WLOH8Fmi7g+mbws4gxlxAzx5ELGLnAimuA9bs1hrg/zJCLBTR9t4o+c4hZRJguSlSDyNVS/nxtKUe8d089dkzXwONxBv7yRvEwhtweQCPNb/8bLzNr3vwNYiJ8qkwS3yaKkcRMZvj8DyalwHiBNyElpjcAFVg/xtTHtkttbUHChSqRSMySMFXM87KyyUBBVgZ1l7AAgS6GQB8DETfXCmsFbAQXBzL4JYhQCZpAO4d7YDSQiIEHuYoEPgEkUwF2vGIz1Dq9/WNk3rOQRzym/l3bUISZR4VQfFTI+/gVPqJl7i9l1IENEPIpDEDKIiYLQ4tF8WJA73WAUo5Nnmca8Tkork2eAgDR5k3HJkeQ4nHRf95+GWERgtHucvSZvP0S5MO7NoGW/fZPWB22BgNPbNKPIfqyAoojezZ5UXpgDe4Ixvdt8gxK4Od8jzDSswn09sZpXBhZp22TE3N0WF3wosh5J2e37ex/9bEvj6jBuHnv+SJ/Vs582dPFsi1y97kppbi5XoLo5qk7/4dP3cmxjAaEuwMXBpAL/keiNOA+w33ZI5qwiVggvwsEGgAN4bPr6xFVDLDXzQ0Ow12UCDOxvIApdISZ690F/kpLBocwzxoYZT3L4q41nBlQBgA3zVBU3e/+3GzPVfR9bPTXCBsWqARnMVRg8ih/YBAWBxgtaN4uvsnMXodH8xe4nTkcjGcFSwyyJAZIbufWGthprK+U2AS5ZopwaUS7a1UtMPJcYgKXVntm7s0FwNm/AGFnrdU=
+sidebar_class_name: "post api-method"
+info_path: facturador/Guia-remision/introduccion
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Generar Guia de Remisión - Transportista"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/dispatches"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Para generar una guia de remision de transportista puede usar el siguiente servicio, necesitará la url, el token, y los datos del documento.  
+
+***Ejemplo:***  
+ - **Método:** POST  
+ - **URL:** https://empresa1.demo3pro6.ibu.pe/api/dispatches 
+ - **TOKEN:** HOHYgwd4atPalTxqi2IIspythpLAU7eP239oByfjk9VuveiOpfUTm4Yg0Szt  
+
+ **NOTA:**  
+ El Chofer y el Vehículo son campos obligatorios. Sin embargo, el Chofer Secundario y el Vehículo Secundario son opcionales, y pueden ser omitidos.
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<MimeTabs
+  className={"openapi-tabs__mime"}
+  schemaType={"request"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3><span
+          className={"openapi-schema__required"}
+        >
+          required
+        </span>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        <div
+          style={{"marginTop":"1rem","marginBottom":"1rem"}}
+        >
+          
+          
+          1. JSON A ENVIAR
+          
+          
+        </div>
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"serie_documento"}
+          required={true}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"T001"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"numero_documento"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"#"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"fecha_de_emision"}
+          required={false}
+          schemaName={"date"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","format":"date","example":"2024-11-12"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hora_de_emision"}
+          required={false}
+          schemaName={"time"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","format":"time","example":"10:11:11"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"codigo_tipo_documento"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"09"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  datos_del_emisor
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object
+                </span><span
+                  className={"openapi-schema__divider"}
+                >
+                  
+                </span><span
+                  className={"openapi-schema__required"}
+                >
+                  required
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <SchemaItem
+                collapsible={false}
+                name={"codigo_pais"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"PE"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"ubigeo"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"150101"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"direccion"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"Av. 2 de Mayo"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"correo_electronico"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"demo@gmail.com"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"telefono"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"427-1148"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"codigo_del_domicilio_fiscal"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"0000"}}
+              >
+                
+              </SchemaItem>
+            </div>
+          </details>
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  datos_del_cliente_o_receptor
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object
+                </span><span
+                  className={"openapi-schema__divider"}
+                >
+                  
+                </span><span
+                  className={"openapi-schema__required"}
+                >
+                  required
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <SchemaItem
+                collapsible={false}
+                name={"codigo_tipo_documento_identidad"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"6"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"numero_documento"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"10414711225"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"apellidos_y_nombres_o_razon_social"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"EMPRESA XYZ S.A."}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"nombre_comercial"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"EMPRESA XYZ S.A."}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"codigo_pais"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"PE"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"ubigeo"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"150101"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"direccion"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"Av. 2 de Mayo"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"correo_electronico"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"demo@gmail.com"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"telefono"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"427-1148"}}
+              >
+                
+              </SchemaItem>
+            </div>
+          </details>
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"observaciones"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"aaaaaaaaaaaaaaa"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"codigo_modo_transporte"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"01"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"codigo_motivo_traslado"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"01"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"descripcion_motivo_traslado"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"El cliente solicito envia a su trabajo en ..."}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"fecha_de_traslado"}
+          required={false}
+          schemaName={"date"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","format":"date","example":"2024-11-12"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"codigo_de_puerto"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":""}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"indicador_de_transbordo"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","example":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"unidad_peso_total"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"KGM"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"peso_total"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","example":30}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"numero_de_bultos"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","example":1}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"numero_de_contenedor"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":""}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  direccion_partida
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object
+                </span><span
+                  className={"openapi-schema__divider"}
+                >
+                  
+                </span><span
+                  className={"openapi-schema__required"}
+                >
+                  required
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <SchemaItem
+                collapsible={false}
+                name={"ubigeo"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"150101"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"direccion"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"PUNTO A"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"codigo_del_domicilio_fiscal"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":""}}
+              >
+                
+              </SchemaItem>
+            </div>
+          </details>
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  direccion_llegada
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object
+                </span><span
+                  className={"openapi-schema__divider"}
+                >
+                  
+                </span><span
+                  className={"openapi-schema__required"}
+                >
+                  required
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <SchemaItem
+                collapsible={false}
+                name={"ubigeo"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"150101"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"direccion"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"PUNTO 2"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"codigo_del_domicilio_fiscal"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":""}}
+              >
+                
+              </SchemaItem>
+            </div>
+          </details>
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  transportista
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object
+                </span><span
+                  className={"openapi-schema__divider"}
+                >
+                  
+                </span><span
+                  className={"openapi-schema__required"}
+                >
+                  required
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <SchemaItem
+                collapsible={false}
+                name={"codigo_tipo_documento_identidad"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"6"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"numero_documento"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"10417844398"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"apellidos_y_nombres_o_razon_social"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"aaaaaaaaa"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"numero_mtc"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":""}}
+              >
+                
+              </SchemaItem>
+            </div>
+          </details>
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  chofer
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object
+                </span><span
+                  className={"openapi-schema__divider"}
+                >
+                  
+                </span><span
+                  className={"openapi-schema__required"}
+                >
+                  required
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <SchemaItem
+                collapsible={false}
+                name={"codigo_tipo_documento_identidad"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"1"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"numero_documento"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"4177874"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"nombres"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"Juan Perez"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"numero_licencia"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"A76023452"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"telefono"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"923131232"}}
+              >
+                
+              </SchemaItem>
+            </div>
+          </details>
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  chofer_secundario
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object[]
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <li>
+                <div
+                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                >
+                  Array [
+                </div>
+              </li><SchemaItem
+                collapsible={false}
+                name={"codigo_tipo_documento_identidad"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"1"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"numero_documento"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"41778243"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"nombres"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"Nombres y apellidos 1"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"numero_licencia"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"A76023452"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"telefono"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":""}}
+              >
+                
+              </SchemaItem><li>
+                <div
+                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                >
+                  ]
+                </div>
+              </li>
+            </div>
+          </details>
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  vehiculo
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object
+                </span><span
+                  className={"openapi-schema__divider"}
+                >
+                  
+                </span><span
+                  className={"openapi-schema__required"}
+                >
+                  required
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <SchemaItem
+                collapsible={false}
+                name={"numero_de_placa"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"A011254"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"certificado_habilitacion_vehicular"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"1212121212"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"modelo"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"YARIS"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"marca"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"TOYOTA"}}
+              >
+                
+              </SchemaItem>
+            </div>
+          </details>
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  vehiculo_secundario
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object[]
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <li>
+                <div
+                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                >
+                  Array [
+                </div>
+              </li><SchemaItem
+                collapsible={false}
+                name={"numero_de_placa"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"A012254"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"certificado_habilitacion_vehicular"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"1212121212"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"modelo"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"YARIS"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"marca"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"TOYOTA"}}
+              >
+                
+              </SchemaItem><li>
+                <div
+                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                >
+                  ]
+                </div>
+              </li>
+            </div>
+          </details>
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  items
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object[]
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <li>
+                <div
+                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                >
+                  Array [
+                </div>
+              </li><SchemaItem
+                collapsible={false}
+                name={"codigo_interno"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"P0121"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"cantidad"}
+                required={false}
+                schemaName={"number"}
+                qualifierMessage={undefined}
+                schema={{"type":"number","example":2}}
+              >
+                
+              </SchemaItem><li>
+                <div
+                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                >
+                  ]
+                </div>
+              </li>
+            </div>
+          </details>
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  documento_afectado
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <SchemaItem
+                collapsible={false}
+                name={"serie_documento"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"F001"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"numero_documento"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"190"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"codigo_tipo_documento"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"01"}}
+              >
+                
+              </SchemaItem>
+            </div>
+          </details>
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem><TabItem
+    label={"application/xml"}
+    value={"application/xml"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3><span
+          className={"openapi-schema__required"}
+        >
+          required
+        </span>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        <div
+          style={{"marginTop":"1rem","marginBottom":"1rem"}}
+        >
+          
+          
+          1. JSON A ENVIAR
+          
+          
+        </div>
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"serie_documento"}
+          required={true}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"T001"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"numero_documento"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"#"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"fecha_de_emision"}
+          required={false}
+          schemaName={"date"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","format":"date","example":"2024-11-12"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hora_de_emision"}
+          required={false}
+          schemaName={"time"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","format":"time","example":"10:11:11"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"codigo_tipo_documento"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"09"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  datos_del_emisor
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object
+                </span><span
+                  className={"openapi-schema__divider"}
+                >
+                  
+                </span><span
+                  className={"openapi-schema__required"}
+                >
+                  required
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <SchemaItem
+                collapsible={false}
+                name={"codigo_pais"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"PE"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"ubigeo"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"150101"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"direccion"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"Av. 2 de Mayo"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"correo_electronico"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"demo@gmail.com"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"telefono"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"427-1148"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"codigo_del_domicilio_fiscal"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"0000"}}
+              >
+                
+              </SchemaItem>
+            </div>
+          </details>
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  datos_del_cliente_o_receptor
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object
+                </span><span
+                  className={"openapi-schema__divider"}
+                >
+                  
+                </span><span
+                  className={"openapi-schema__required"}
+                >
+                  required
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <SchemaItem
+                collapsible={false}
+                name={"codigo_tipo_documento_identidad"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"6"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"numero_documento"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"10414711225"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"apellidos_y_nombres_o_razon_social"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"EMPRESA XYZ S.A."}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"nombre_comercial"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"EMPRESA XYZ S.A."}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"codigo_pais"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"PE"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"ubigeo"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"150101"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"direccion"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"Av. 2 de Mayo"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"correo_electronico"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"demo@gmail.com"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"telefono"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"427-1148"}}
+              >
+                
+              </SchemaItem>
+            </div>
+          </details>
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"observaciones"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"aaaaaaaaaaaaaaa"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"codigo_modo_transporte"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"01"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"codigo_motivo_traslado"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"01"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"descripcion_motivo_traslado"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"El cliente solicito envia a su trabajo en ..."}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"fecha_de_traslado"}
+          required={false}
+          schemaName={"date"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","format":"date","example":"2024-11-12"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"codigo_de_puerto"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":""}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"indicador_de_transbordo"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","example":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"unidad_peso_total"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"KGM"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"peso_total"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","example":30}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"numero_de_bultos"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","example":1}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"numero_de_contenedor"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":""}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  direccion_partida
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object
+                </span><span
+                  className={"openapi-schema__divider"}
+                >
+                  
+                </span><span
+                  className={"openapi-schema__required"}
+                >
+                  required
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <SchemaItem
+                collapsible={false}
+                name={"ubigeo"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"150101"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"direccion"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"PUNTO A"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"codigo_del_domicilio_fiscal"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":""}}
+              >
+                
+              </SchemaItem>
+            </div>
+          </details>
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  direccion_llegada
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object
+                </span><span
+                  className={"openapi-schema__divider"}
+                >
+                  
+                </span><span
+                  className={"openapi-schema__required"}
+                >
+                  required
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <SchemaItem
+                collapsible={false}
+                name={"ubigeo"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"150101"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"direccion"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"PUNTO 2"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"codigo_del_domicilio_fiscal"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":""}}
+              >
+                
+              </SchemaItem>
+            </div>
+          </details>
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  transportista
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object
+                </span><span
+                  className={"openapi-schema__divider"}
+                >
+                  
+                </span><span
+                  className={"openapi-schema__required"}
+                >
+                  required
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <SchemaItem
+                collapsible={false}
+                name={"codigo_tipo_documento_identidad"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"6"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"numero_documento"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"10417844398"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"apellidos_y_nombres_o_razon_social"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"aaaaaaaaa"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"numero_mtc"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":""}}
+              >
+                
+              </SchemaItem>
+            </div>
+          </details>
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  chofer
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object
+                </span><span
+                  className={"openapi-schema__divider"}
+                >
+                  
+                </span><span
+                  className={"openapi-schema__required"}
+                >
+                  required
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <SchemaItem
+                collapsible={false}
+                name={"codigo_tipo_documento_identidad"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"1"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"numero_documento"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"4177874"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"nombres"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"Juan Perez"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"numero_licencia"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"A76023452"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"telefono"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"923131232"}}
+              >
+                
+              </SchemaItem>
+            </div>
+          </details>
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  chofer_secundario
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object[]
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <li>
+                <div
+                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                >
+                  Array [
+                </div>
+              </li><SchemaItem
+                collapsible={false}
+                name={"codigo_tipo_documento_identidad"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"1"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"numero_documento"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"41778243"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"nombres"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"Nombres y apellidos 1"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"numero_licencia"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"A76023452"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"telefono"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":""}}
+              >
+                
+              </SchemaItem><li>
+                <div
+                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                >
+                  ]
+                </div>
+              </li>
+            </div>
+          </details>
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  vehiculo
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object
+                </span><span
+                  className={"openapi-schema__divider"}
+                >
+                  
+                </span><span
+                  className={"openapi-schema__required"}
+                >
+                  required
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <SchemaItem
+                collapsible={false}
+                name={"numero_de_placa"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"A011254"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"certificado_habilitacion_vehicular"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"1212121212"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"modelo"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"YARIS"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"marca"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"TOYOTA"}}
+              >
+                
+              </SchemaItem>
+            </div>
+          </details>
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  vehiculo_secundario
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object[]
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <li>
+                <div
+                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                >
+                  Array [
+                </div>
+              </li><SchemaItem
+                collapsible={false}
+                name={"numero_de_placa"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"A012254"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"certificado_habilitacion_vehicular"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"1212121212"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"modelo"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"YARIS"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"marca"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"TOYOTA"}}
+              >
+                
+              </SchemaItem><li>
+                <div
+                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                >
+                  ]
+                </div>
+              </li>
+            </div>
+          </details>
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  items
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object[]
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <li>
+                <div
+                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                >
+                  Array [
+                </div>
+              </li><SchemaItem
+                collapsible={false}
+                name={"codigo_interno"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"P0121"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"cantidad"}
+                required={false}
+                schemaName={"number"}
+                qualifierMessage={undefined}
+                schema={{"type":"number","example":2}}
+              >
+                
+              </SchemaItem><li>
+                <div
+                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                >
+                  ]
+                </div>
+              </li>
+            </div>
+          </details>
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  documento_afectado
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <SchemaItem
+                collapsible={false}
+                name={"serie_documento"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"F001"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"numero_documento"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"190"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"codigo_tipo_documento"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"01"}}
+              >
+                
+              </SchemaItem>
+            </div>
+          </details>
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem><TabItem
+    label={"application/x-www-form-urlencoded"}
+    value={"application/x-www-form-urlencoded"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3><span
+          className={"openapi-schema__required"}
+        >
+          required
+        </span>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        <div
+          style={{"marginTop":"1rem","marginBottom":"1rem"}}
+        >
+          
+          
+          1. JSON A ENVIAR
+          
+          
+        </div>
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"serie_documento"}
+          required={true}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"T001"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"numero_documento"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"#"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"fecha_de_emision"}
+          required={false}
+          schemaName={"date"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","format":"date","example":"2024-11-12"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hora_de_emision"}
+          required={false}
+          schemaName={"time"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","format":"time","example":"10:11:11"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"codigo_tipo_documento"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"09"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  datos_del_emisor
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object
+                </span><span
+                  className={"openapi-schema__divider"}
+                >
+                  
+                </span><span
+                  className={"openapi-schema__required"}
+                >
+                  required
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <SchemaItem
+                collapsible={false}
+                name={"codigo_pais"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"PE"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"ubigeo"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"150101"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"direccion"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"Av. 2 de Mayo"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"correo_electronico"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"demo@gmail.com"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"telefono"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"427-1148"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"codigo_del_domicilio_fiscal"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"0000"}}
+              >
+                
+              </SchemaItem>
+            </div>
+          </details>
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  datos_del_cliente_o_receptor
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object
+                </span><span
+                  className={"openapi-schema__divider"}
+                >
+                  
+                </span><span
+                  className={"openapi-schema__required"}
+                >
+                  required
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <SchemaItem
+                collapsible={false}
+                name={"codigo_tipo_documento_identidad"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"6"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"numero_documento"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"10414711225"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"apellidos_y_nombres_o_razon_social"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"EMPRESA XYZ S.A."}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"nombre_comercial"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"EMPRESA XYZ S.A."}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"codigo_pais"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"PE"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"ubigeo"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"150101"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"direccion"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"Av. 2 de Mayo"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"correo_electronico"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"demo@gmail.com"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"telefono"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"427-1148"}}
+              >
+                
+              </SchemaItem>
+            </div>
+          </details>
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"observaciones"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"aaaaaaaaaaaaaaa"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"codigo_modo_transporte"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"01"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"codigo_motivo_traslado"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"01"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"descripcion_motivo_traslado"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"El cliente solicito envia a su trabajo en ..."}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"fecha_de_traslado"}
+          required={false}
+          schemaName={"date"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","format":"date","example":"2024-11-12"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"codigo_de_puerto"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":""}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"indicador_de_transbordo"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","example":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"unidad_peso_total"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"KGM"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"peso_total"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","example":30}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"numero_de_bultos"}
+          required={false}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number","example":1}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"numero_de_contenedor"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":""}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  direccion_partida
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object
+                </span><span
+                  className={"openapi-schema__divider"}
+                >
+                  
+                </span><span
+                  className={"openapi-schema__required"}
+                >
+                  required
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <SchemaItem
+                collapsible={false}
+                name={"ubigeo"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"150101"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"direccion"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"PUNTO A"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"codigo_del_domicilio_fiscal"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":""}}
+              >
+                
+              </SchemaItem>
+            </div>
+          </details>
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  direccion_llegada
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object
+                </span><span
+                  className={"openapi-schema__divider"}
+                >
+                  
+                </span><span
+                  className={"openapi-schema__required"}
+                >
+                  required
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <SchemaItem
+                collapsible={false}
+                name={"ubigeo"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"150101"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"direccion"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"PUNTO 2"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"codigo_del_domicilio_fiscal"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":""}}
+              >
+                
+              </SchemaItem>
+            </div>
+          </details>
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  transportista
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object
+                </span><span
+                  className={"openapi-schema__divider"}
+                >
+                  
+                </span><span
+                  className={"openapi-schema__required"}
+                >
+                  required
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <SchemaItem
+                collapsible={false}
+                name={"codigo_tipo_documento_identidad"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"6"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"numero_documento"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"10417844398"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"apellidos_y_nombres_o_razon_social"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"aaaaaaaaa"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"numero_mtc"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":""}}
+              >
+                
+              </SchemaItem>
+            </div>
+          </details>
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  chofer
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object
+                </span><span
+                  className={"openapi-schema__divider"}
+                >
+                  
+                </span><span
+                  className={"openapi-schema__required"}
+                >
+                  required
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <SchemaItem
+                collapsible={false}
+                name={"codigo_tipo_documento_identidad"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"1"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"numero_documento"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"4177874"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"nombres"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"Juan Perez"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"numero_licencia"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"A76023452"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"telefono"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"923131232"}}
+              >
+                
+              </SchemaItem>
+            </div>
+          </details>
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  chofer_secundario
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object[]
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <li>
+                <div
+                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                >
+                  Array [
+                </div>
+              </li><SchemaItem
+                collapsible={false}
+                name={"codigo_tipo_documento_identidad"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"1"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"numero_documento"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"41778243"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"nombres"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"Nombres y apellidos 1"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"numero_licencia"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"A76023452"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"telefono"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":""}}
+              >
+                
+              </SchemaItem><li>
+                <div
+                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                >
+                  ]
+                </div>
+              </li>
+            </div>
+          </details>
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  vehiculo
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object
+                </span><span
+                  className={"openapi-schema__divider"}
+                >
+                  
+                </span><span
+                  className={"openapi-schema__required"}
+                >
+                  required
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <SchemaItem
+                collapsible={false}
+                name={"numero_de_placa"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"A011254"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"certificado_habilitacion_vehicular"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"1212121212"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"modelo"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"YARIS"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"marca"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"TOYOTA"}}
+              >
+                
+              </SchemaItem>
+            </div>
+          </details>
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  vehiculo_secundario
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object[]
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <li>
+                <div
+                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                >
+                  Array [
+                </div>
+              </li><SchemaItem
+                collapsible={false}
+                name={"numero_de_placa"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"A012254"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"certificado_habilitacion_vehicular"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"1212121212"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"modelo"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"YARIS"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"marca"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"TOYOTA"}}
+              >
+                
+              </SchemaItem><li>
+                <div
+                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                >
+                  ]
+                </div>
+              </li>
+            </div>
+          </details>
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  items
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object[]
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <li>
+                <div
+                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                >
+                  Array [
+                </div>
+              </li><SchemaItem
+                collapsible={false}
+                name={"codigo_interno"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"P0121"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"cantidad"}
+                required={false}
+                schemaName={"number"}
+                qualifierMessage={undefined}
+                schema={{"type":"number","example":2}}
+              >
+                
+              </SchemaItem><li>
+                <div
+                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                >
+                  ]
+                </div>
+              </li>
+            </div>
+          </details>
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  documento_afectado
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <SchemaItem
+                collapsible={false}
+                name={"serie_documento"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"F001"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"numero_documento"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"190"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"codigo_tipo_documento"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"01"}}
+              >
+                
+              </SchemaItem>
+            </div>
+          </details>
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          JSON RESPUESTA
+          
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"success"}
+                        required={false}
+                        schemaName={"boolean"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"boolean","example":true}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={true}
+                        className={"schemaItem"}
+                      >
+                        <details
+                          style={{}}
+                          className={"openapi-markdown__details"}
+                        >
+                          <summary
+                            style={{}}
+                          >
+                            <span
+                              className={"openapi-schema__container"}
+                            >
+                              <strong
+                                className={"openapi-schema__property"}
+                              >
+                                data
+                              </strong><span
+                                className={"openapi-schema__name"}
+                              >
+                                 object
+                              </span>
+                            </span>
+                          </summary><div
+                            style={{"marginLeft":"1rem"}}
+                          >
+                            <SchemaItem
+                              collapsible={false}
+                              name={"number"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","example":"T001-6"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"filename"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","example":"11111111111-09-T001-6"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"external_id"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","example":"284a24e7-7997-4c91-83e5-34c92922cde0"}}
+                            >
+                              
+                            </SchemaItem>
+                          </div>
+                        </details>
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"success\": true,\n  \"data\": {\n    \"number\": \"T001-6\",\n    \"filename\": \"11111111111-09-T001-6\",\n    \"external_id\": \"284a24e7-7997-4c91-83e5-34c92922cde0\"\n  }\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem><TabItem
+              label={"application/xml"}
+              value={"application/xml"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"success"}
+                        required={false}
+                        schemaName={"boolean"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"boolean","example":true}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={true}
+                        className={"schemaItem"}
+                      >
+                        <details
+                          style={{}}
+                          className={"openapi-markdown__details"}
+                        >
+                          <summary
+                            style={{}}
+                          >
+                            <span
+                              className={"openapi-schema__container"}
+                            >
+                              <strong
+                                className={"openapi-schema__property"}
+                              >
+                                data
+                              </strong><span
+                                className={"openapi-schema__name"}
+                              >
+                                 object
+                              </span>
+                            </span>
+                          </summary><div
+                            style={{"marginLeft":"1rem"}}
+                          >
+                            <SchemaItem
+                              collapsible={false}
+                              name={"number"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","example":"T001-6"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"filename"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","example":"11111111111-09-T001-6"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"external_id"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string","example":"284a24e7-7997-4c91-83e5-34c92922cde0"}}
+                            >
+                              
+                            </SchemaItem>
+                          </div>
+                        </details>
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"<root>\n  <success>true</success>\n  <data>\n    <number>T001-6</number>\n    <filename>11111111111-09-T001-6</filename>\n    <external_id>284a24e7-7997-4c91-83e5-34c92922cde0</external_id>\n  </data>\n</root>"}
+                    language={"xml"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem><TabItem
+        label={"400"}
+        value={"400"}
+      >
+        <div>
+          
+          
+          Invalid input
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"422"}
+        value={"422"}
+      >
+        <div>
+          
+          
+          Validation exception
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

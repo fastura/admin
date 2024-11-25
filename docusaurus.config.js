@@ -57,11 +57,92 @@ const config = {
         id: "facturador", // plugin id
         docsPluginId: "classic", // configured for preset-classic
         config: {
-          facturador : {
-            specPath: "apifacturador/GuiaDeRemision/transportista.yaml",
-            outputDir: "docs/facturador/Guía de Remisión",
+          anulacion_boleta : {
+            specPath: "apifacturador/AnulacionBoletas",
+            outputDir: "docs/facturador/Anulacion-Boletas",
+            baseUrl: "/facturador",
             sidebarOptions: {
-              groupPathsBy: "tag",
+              // groupPathsBy: "anulacion-boletas",
+            },
+          },
+          anulacion_facturas: {
+            specPath: "apifacturador/AnulaciónFacturasNotas",
+            outputDir: "docs/facturador/Anulacion-facturas",
+            baseUrl: "/facturador",
+            sidebarOptions: {
+              // groupPathsBy: "anulacion-facturas",
+            },
+          },
+          generar_boleta: {
+            specPath: "apifacturador/GenerarBoleta",
+            outputDir: "docs/facturador/Generar-boleta",
+            baseUrl: "/facturador",
+            sidebarOptions: {
+              // groupPathsBy: "generar-boleta",
+            },
+          },
+          generar_cotización: {
+            specPath: "apifacturador/GenerarCotizacion",
+            outputDir: "docs/facturador/Generar-cotizacion",
+            baseUrl: "/facturador",
+            sidebarOptions: {
+              // groupPathsBy: "generar-cotizacion",
+            },
+          },
+          generar_factura: {
+            specPath: "apifacturador/GenerarFactura",
+            outputDir: "docs/facturador/Generar-factura",
+            baseUrl: "/facturador",
+            sidebarOptions: {
+              // groupPathsBy: "generar-factura",
+            },
+          },
+          generar_notas: {
+            specPath: "apifacturador/GenerarNotas",
+            outputDir: "docs/facturador/Generar-notas",
+            baseUrl: "/facturador",
+            sidebarOptions: {
+              // groupPathsBy: "generar-notas",
+            },
+          },
+          generar_resumenes: {
+            specPath: "apifacturador/GenerarResúmenes",
+            outputDir: "docs/facturador/Generar-resumenes",
+            baseUrl: "/facturador",
+            sidebarOptions: {
+              // groupPathsBy: "generar-resumenes",
+            },
+          },
+          guia_remision: {
+            specPath: "apifacturador/GuiaDeRemision",
+            outputDir: "docs/facturador/Guia-remision",
+            baseUrl: "/facturador",
+            sidebarOptions: {
+              // groupPathsBy: "guia-remision",
+            },
+          },
+          inventario: {
+            specPath: "apifacturador/Inventario",
+            outputDir: "docs/facturador/inventario",
+            baseUrl: "/facturador",
+            sidebarOptions: {
+              // groupPathsBy: "inventario",
+            },
+          },
+          productos: {
+            specPath: "apifacturador/Productos",
+            outputDir: "docs/facturador/productos",
+            baseUrl: "/facturador",
+            sidebarOptions: {
+              // groupPathsBy: "productos",
+            },
+          },
+          retencion: {
+            specPath: "apifacturador/Retencion",
+            outputDir: "docs/facturador/retencion",
+            baseUrl: "/facturador",
+            sidebarOptions: {
+              // groupPathsBy: "retencion",
             },
           },
         }
@@ -81,7 +162,7 @@ const config = {
           src: 'img/fastura.svg',
         },
         items: [
-          { to: 'facturador/introduccion', label: 'Documentación de API REST', position: 'left' },
+          // { to: 'facturador/introduccion', label: 'Documentación de API REST', position: 'left' },
           // {
           //   label: 'Api del facturador',
           //   position: 'left',
