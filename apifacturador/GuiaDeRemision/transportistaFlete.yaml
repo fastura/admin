@@ -29,19 +29,19 @@ tags:
       
 
 paths:
-  /api/dispatches:
+  /api/dispatch-carrier:
     post:
       tags:
         - api
-      summary: Generar Guia de Remisión - Flete
+      summary: Transportista | Pagador Flete
       description: |  
-        Aquí se muestra el proceso para generar guía de remisión con flete  
+        Aquí se muestra el proceso para generar Transportista con flete  
 
         ***Ejemplo:***  
          - **Método:** POST  
-         - **URL:** https://empresa1.demo3pro6.ibu.pe/api/dispatches 
+         - **URL:** https://empresa1.demo3pro6.ibu.pe/api/dispatch-carrier 
          - **TOKEN:** HOHYgwd4atPalTxqi2IIspythpLAU7eP239oByfjk9VuveiOpfUTm4Yg0Szt  
-      operationId: generarGuiaRemisionFlete
+      operationId: transportistaFlete
       requestBody:
         description: 1. JSON A ENVIAR
         content:
@@ -81,23 +81,6 @@ components:
     Pet:
       type: object
       properties:
-        serie_documento:
-          type: string
-          example: "T001"
-        numero_documento:
-          type: string
-          example: "#"
-        fecha_de_emision:
-          type: string
-          format: date
-          example: "2024-11-12"
-        hora_de_emision:
-          type: string
-          format: time
-          example: "10:11:11"
-        codigo_tipo_documento:
-          type: string
-          example: "09"
         datos_del_emisor:
           type: object
           properties:
@@ -119,109 +102,75 @@ components:
             codigo_del_domicilio_fiscal:
               type: string
               example: "0000"
-        datos_del_cliente_o_receptor:
-          type: object
-          properties:
-            codigo_tipo_documento_identidad:
-              type: string
-              example: "6"
-            numero_documento:
-              type: string
-              example: "10414711225"
-            apellidos_y_nombres_o_razon_social:
-              type: string
-              example: "EMPRESA XYZ S.A."
-            nombre_comercial:
-              type: string
-              example: "EMPRESA XYZ S.A."
-            codigo_pais:
-              type: string
-              example: "PE"
-            ubigeo:
-              type: string
-              example: "150101"
-            direccion:
-              type: string
-              example: "Av. 2 de Mayo"
-            correo_electronico:
-              type: string
-              example: "demo@gmail.com"
-            telefono:
-              type: string
-              example: "427-1148"
-        observaciones:
+        serie_documento:
           type: string
-          example: "aaaaaaaaaaaaaaa"
-        codigo_modo_transporte:
+          example: "V001"
+        numero_documento:
           type: string
-          example: "01"
-        codigo_motivo_traslado:
+          example: "#"
+        codigo_tipo_documento:
           type: string
-          example: "01"
-        descripcion_motivo_traslado:
+          example: "31"
+        fecha_de_emision:
           type: string
-          example: "El cliente solicito envia a su trabajo en ..."
+          format: date
+          example: "2022-12-14"
+        hora_de_emision:
+          type: string
+          format: time
+          example: "10:11:11"
         fecha_de_traslado:
           type: string
           format: date
-          example: "2024-11-12"
-        codigo_de_puerto:
-          type: string
-          example: ""
-        indicador_de_transbordo: 
-          type: boolean
-          example: false
+          example: "2022-12-02"
         unidad_peso_total:
           type: string
           example: "KGM"
         peso_total:
           type: number
           example: 30.00
-        numero_de_bultos:
-          type: number
-          example: 1
-        numero_de_contenedor:
+        observaciones:
           type: string
-          example: ""
-        direccion_partida:
-          type: object
-          properties:
-            ubigeo:
-              type: string
-              example: "150101"
-            direccion:
-              type: string
-              example: "PUNTO A"
-            codigo_del_domicilio_fiscal:
-              type: string
-              example: ""
-        direccion_llegada:
-          type: object
-          properties:
-            ubigeo:
-              type: string
-              example: "150101"
-            direccion:
-              type: string
-              example: "PUNTO 2"
-            codigo_del_domicilio_fiscal:
-              type: string
-              example: ""
-        transportista:
+          example: "aaaaaaaaaaaaaaa"
+        indicador_de_transbordo:
+          type: boolean
+          example: false
+        datos_remitente:
           type: object
           properties:
             codigo_tipo_documento_identidad:
               type: string
               example: "6"
+            descripcion_tipo_documento_identidad:
+              type: string
+              example: "RUC"
             numero_documento:
               type: string
-              example: "10417844398"
+              example: "20601274133"
             apellidos_y_nombres_o_razon_social:
               type: string
-              example: "aaaaaaaaa"
-            numero_mtc:
+              example: "EMPRESA XYZ S.A."
+            nombre_comercial:
               type: string
-              example: ""
+              example: "EMPRESA XYZ"
+        datos_destinatario:
+          type: object
+          properties:
+            codigo_tipo_documento_identidad:
+              type: string
+              example: "6"
+            descripcion_tipo_documento_identidad:
+              type: string
+              example: "RUC"
+            numero_documento:
+              type: string
+              example: "20601274133"
+            apellidos_y_nombres_o_razon_social:
+              type: string
+              example: "EMPRESA XYZ S.A."
+            nombre_comercial:
+              type: string
+              example: "EMPRESA XYZ"
         chofer:
           type: object
           properties:
@@ -230,68 +179,19 @@ components:
               example: "1"
             numero_documento:
               type: string
-              example: "4177874"
+              example: "41784439"
             nombres:
               type: string
-              example: "Juan Perez"
+              example: "JUAN"
+            apellidos:
+              type: string
+              example: "PEREZ"
             numero_licencia:
               type: string
-              example: "A76023452"
-            telefono:
-              type: string
-              example: "923131232"
-        chofer_secundario:
-          type: array
-          items:
-            type: object
-            properties:
-              codigo_tipo_documento_identidad:
-                type: string
-                example: "1"
-              numero_documento:
-                type: string
-                example: "41778243"
-              nombres:
-                type: string
-                example: "Nombres y apellidos 1"
-              numero_licencia:
-                type: string
-                example: "A76023452"
-              telefono:
-                type: string
-                example: ""
-        vehiculo:
-          type: object
-          properties:
-            numero_de_placa:
-              type: string
-              example: "A011254"
-            certificado_habilitacion_vehicular:
-              type: string
-              example: "1212121212"
-            modelo:
-              type: string
-              example: "YARIS"
-            marca:
-              type: string
-              example: "TOYOTA"
-        vehiculo_secundario:
-          type: array
-          items:
-            type: object
-            properties:
-              numero_de_placa:
-                type: string
-                example: "A012254"
-              certificado_habilitacion_vehicular:
-                type: string
-                example: "1212121212"
-              modelo: 
-                type: string
-                example: "YARIS"
-              marca: 
-                type: string
-                example: "TOYOTA"
+              example: "Q41784439"
+        numero_de_placa:
+          type: string
+          example: "A011254"
         items:
           type: array
           items:
@@ -299,22 +199,10 @@ components:
             properties:
               codigo_interno:
                 type: string
-                example: "P0121"
+                example: "prueba"
               cantidad:
                 type: number
                 example: 2
-        documento_afectado:
-          type: object
-          properties: 
-            serie_documento:
-              type: string
-              example: "F001"
-            numero_documento:
-              type: string
-              example: "190"
-            codigo_tipo_documento:
-              type: string
-              example: "01"
         pagador_flete:
           type: object
           properties:
@@ -355,10 +243,10 @@ components:
           properties:
             number:
               type: string
-              example: "T001-11"
+              example: "V001-11"
             filename:
               type: string
-              example: "11111111111-09-T001-11"
+              example: "11111111111-09-V001-11"
             external_id:
               type: string
               example: "b8f5e270-f264-4017-a00f-7a3f7cb59862"

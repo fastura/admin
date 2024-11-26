@@ -35,6 +35,9 @@ paths:
         - api
       summary: Transportista
       description: |  
+        Su propósito es registrar la información básica de un transporte directo entre el remitente y el destinatario, usualmente cuando el transporte 
+        lo realiza una sola persona o entidad.  
+
         ***Ejemplo:***  
          - **Método:** POST  
          - **URL:** https://empresa1.demo3pro6.ibu.pe/api/dispatch-carrier  
@@ -133,9 +136,6 @@ components:
         indicador_de_transbordo:
           type: boolean
           example: false
-        remitente_id:
-          type: integer
-          example: 1
         datos_remitente:
           type: object
           properties:
@@ -154,12 +154,6 @@ components:
             nombre_comercial:
               type: string
               example: "EMPRESA XYZ"
-        direccion_remitente_id:
-          type: integer
-          example: 1
-        destinatario_id:
-          type: integer
-          example: 1
         datos_destinatario:
           type: object
           properties:
@@ -178,9 +172,6 @@ components:
             nombre_comercial:
               type: string
               example: "EMPRESA XYZ"
-        direccion_destinatario_id:
-          type: integer
-          example: 2
         chofer:
           type: object
           properties:
@@ -213,7 +204,6 @@ components:
               cantidad:
                 type: number
                 example: 2
-
 
       required:
         - datos_del_emisor

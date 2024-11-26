@@ -35,6 +35,8 @@ paths:
         - api
       summary: Remitente | Transporte Público
       description: |  
+        Este tipo de transporte implica la subcontratación de una empresa transportista registrada para llevar a cabo el traslado de los bienes. 
+        Es necesario proporcionar la información de la compañía de transporte.
         ***Ejemplo:***  
          - **Método:** POST  
          - **URL:** https://empresa1.demo3pro6.ibu.pe/api/dispatches  

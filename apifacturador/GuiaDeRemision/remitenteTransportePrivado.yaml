@@ -35,6 +35,9 @@ paths:
         - api
       summary: Remitente | Transporte Privado
       description: |  
+        Este tipo de transporte se refiere a los envíos realizados utilizando vehículos propios del remitente, como parte de su operación logística.
+         En este caso, se debe especificar la información del conductor encargado del traslado y los datos del vehículo utilizado.  
+
         ***Ejemplo:***  
          - **Método:** POST  
          - **URL:** https://empresa1.demo3pro6.ibu.pe/api/dispatches  
