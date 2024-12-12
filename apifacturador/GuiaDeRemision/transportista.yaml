@@ -115,7 +115,7 @@ components:
         fecha_de_emision:
           type: string
           format: date
-          example: "2022-12-14"
+          example: "2024-12-12"
         hora_de_emision:
           type: string
           format: time
@@ -123,13 +123,13 @@ components:
         fecha_de_traslado:
           type: string
           format: date
-          example: "2022-12-02"
+          example: "2024-12-12"
         unidad_peso_total:
           type: string
           example: "KGM"
         peso_total:
           type: number
-          example: 30.00
+          example: 30
         observaciones:
           type: string
           example: "aaaaaaaaaaaaaaa"
@@ -190,6 +190,42 @@ components:
             numero_licencia:
               type: string
               example: "Q41784439"
+        vehiculo:
+          type: object
+          properties:
+            numero_de_placa:
+              type: string
+              example: "FDA574"
+            modelo:
+              type: string
+              example: "MODELO 2"
+            marca:
+              type: string
+              example: "HYUNDAI"
+            certificado_habilitacion_vehicular:
+              type: string
+              example: "98745613212"
+        direcciones_proveedores:
+          type: object
+          properties:
+            remitente:
+              type: object
+              properties:
+                direccion:
+                  type: string
+                  example: "Av. 2 de Mayo"
+                ubigeo:
+                  type: string
+                  example: "150101"
+            destinatario:
+              type: object
+              properties:
+                direccion:
+                  type: string
+                  example: "Ac. Manco capac"
+                ubigeo:
+                  type: string
+                  example: "150115"
         numero_de_placa:
           type: string
           example: "A011254"
@@ -204,6 +240,24 @@ components:
               cantidad:
                 type: number
                 example: 2
+        pagador_flete:
+          type: object
+          properties:
+            indicador_pagador_flete:
+              type: string
+              example: "Remitente"
+            codigo_tipo_documento_identidad:
+              type: string
+              example: "1"
+            descripcion_tipo_documento_identidad:
+              type: string
+              example: "RUC"
+            numero:
+              type: string
+              example: "20810001281"
+            nombres:
+              type: string
+              example: "EMPRESA DEMO SAC"
 
       required:
         - datos_del_emisor
@@ -212,6 +266,7 @@ components:
         - chofer
         - numero_de_placa
         - items
+
 
     Response:
       type: object
@@ -224,13 +279,13 @@ components:
           properties:
             number:
               type: string
-              example: "T001-20"
+              example: "V001-15"
             filename:
               type: string
-              example: "11111111111-09-T001-20"
+              example: "11111111111-31-V001-15"
             external_id:
               type: string
-              example: "e6ed6e38-a44f-427d-9c3d-3026feb6b0e0"
+          example: "e6ed6e38-a44f-427d-9c3d-3026feb6b0e0"
 
   requestBodies:
     Pet:
