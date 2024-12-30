@@ -145,6 +145,14 @@ const config = {
               // groupPathsBy: "retencion",
             },
           },
+          Clientes: {
+            specPath: "apifacturador/Clientes",
+            outputDir: "docs/facturador/clientes",
+            baseUrl: "/facturador",
+            sidebarOptions: {
+              // groupPathsBy: "retencion",
+            },
+          },
         }
       },
     ]
